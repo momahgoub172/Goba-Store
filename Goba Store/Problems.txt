@@ -1,0 +1,4 @@
+﻿- When i want to create product , ModelState.IsValid always return false
+    - So i solved it by making some properties in ViewModel nullable
+    
+-

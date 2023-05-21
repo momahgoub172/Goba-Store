@@ -1,0 +1,16 @@
+﻿@model Product
+
+<div class="card col-4 filter @Model.Category.Name.Replace(' ','_')" style="width: 16rem;margin-right: 15px">
+  <img src="@Constants.ImagePath@Model.Image" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">@Model.Name</h5>
+    <p class="card-text">@Model.ShortDescription</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Category : @Model.Category.Name</li>
+    <li class="list-group-item">Price : @Model.Price $</li>
+  </ul>
+  <div class="card-body">
+    <a style="width:100%" asp-controller="Home" asp-action="Details" asp-route-id="@Model.Id" class="btn btn-primary">Details</a>
+  </div>
+</div>

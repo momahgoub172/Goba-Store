@@ -1,0 +1,32 @@
+﻿@model Goba_Store.View_Models.ProductDetailsViewModel
+
+<div class="container">
+    <form method="post" asp-action="details">
+    <input asp-for="@Model.Product.Id" hidden />
+    <div class="card">
+        <div class="card-body">
+            <h3 class="card-title">Product Name : @Model.Product.Name</h3>
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-sm-6">
+                    <div class="white-box text-center"><img src="@Constants.ImagePath@Model.Product.Image" class="img-fluid"></div>
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-6">
+                    <h4>Category</h4><p>@Model.Product.Category.Name</p>
+                    <h4 class="box-title">Product description</h4>
+                    <p>@Html.Raw(Model.Product.Description)</p>
+                    <h2 class="mt-5">$@Model.Product.Price</h2>
+                    @if (Model.InCart == false)
+                        {
+                            <button class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add To Cart</button>
+                        }
+                        else
+                    {
+                        <a asp-action="RemoveFromCart" asp-route-id="@Model.Product.Id" class="btn btn-danger btn-rounded mr-1"><i class="fa fa-shopping-cart"></i> Remove From Cart</a>
+                    }
+                    <a asp-action="index" class="btn btn-outline-dark btn-rounded"><i class="fa-sharp fa-solid fa-arrow-left"></i> Back</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+</div>

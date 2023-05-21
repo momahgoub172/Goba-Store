@@ -1,0 +1,37 @@
+﻿@model Goba_Store.View_Models.HomeViewModel
+
+<div class="container row">
+    <div class="text-center">
+        <button class="btn btn-dark filter-button m-2" data-filter="all">All</button>
+        @foreach (var cat in Model.Categories)
+        {
+            <button class="btn btn-outline-secondary filter-button m-2" data-filter="@cat.Name.Replace(' ','_')">@cat.Name</button>
+        }
+    </div>
+    <br/> <br/><br/> <br/>
+    <div class="row">
+        @foreach (var product in Model.Products)
+        {
+            <partial name="_ProductCard" model="product" />
+        }
+    </div>
+</div>
+
+@section Scripts
+{
+    <script>
+    $(document).ready(function() {
+      $(".filter-button").click(function() {
+        var value  = $(this).attr('data-filter');
+        if (value == "all"){
+           $('.filter').show('1000');
+        }
+        else{
+              //return all elements that not have a specific class then hide them
+              $('.filter').not('.'+value).hide('3000');
+              $('.filter').filter('.'+value).show('3000');
+        }
+      });
+    });
+    </script>
+}

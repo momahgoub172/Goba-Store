@@ -1,0 +1,30 @@
+﻿@model Category
+
+<h2>Edit Category</h2>
+
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Edit" class="needs-validation" novalidate>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label">Category Name</label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="DisplayOrder" class="control-label">Display Order</label>
+                <input asp-for="DisplayOrder" class="form-control" />
+                <span asp-validation-for="DisplayOrder" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary"><i class="fa-solid fa-floppy-disk"></i> Save</button>
+                <a asp-action="Index" class="btn btn-secondary"><i class="fa-sharp fa-solid fa-arrow-left"></i> Back</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://kit.fontawesome.com/1234567890.js" crossorigin="anonymous"></script>
+}

@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Category>
+
+<div class="container">
+    <div class="pb-5 pt-5 row justify-content-between">
+        <h2 class="col-6">Categories</h2>
+        <a  asp-action="Create" asp-controller="Category" class="btn btn-primary w-25"><i class="fa-solid fa-plus" style="color: #ffffff; width:30%"></i>Create Category</a>
+    </div>
+    @if (Model.Any())
+    {
+        <table class="table table-bordered table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th class="text-center p-2 m-2">Name</th>
+                    <th class="text-center p-2 m-2">Display Order</th>
+                    <th class="text-center p-2 m-2">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var category in Model)
+                {
+                    <tr>
+                        <td class="text-muted p-2">@category.Name</td>
+                        <td class="text-muted p-2">@category.DisplayOrder</td>
+                        <td class="text-center p-2">
+                            <a asp-controller="Category" asp-action="Edit" asp-route-Id="@category.Id" class="btn btn-warning btn-sm"><i class="fa-solid fa-pen-to-square"></i></a>
+                            <a asp-controller="Category" asp-action="Delete" asp-route-Id="@category.Id" class="btn btn-danger btn-sm"><i class="fa-solid fa-trash-can" style="color: #511f1f;"></i></a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <div class="alert alert-danger" role="alert">
+            No categories found.
+        </div>
+    }
+</div>

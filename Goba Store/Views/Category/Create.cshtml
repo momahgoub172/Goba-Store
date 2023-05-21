@@ -1,0 +1,22 @@
+﻿@model Goba_Store.View_Models.CategoryViewModel
+
+<h2>Create Category</h2>
+
+<form asp-action="Create">
+    <div class="form-group">
+        <label asp-for="Name" class="form-label">Name</label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="DisplayOrder" class="form-label">Display Order</label>
+        <input asp-for="DisplayOrder" class="form-control" />
+        <span asp-validation-for="DisplayOrder" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary"><i class="fa-solid fa-plus"></i> Create</button>
+        <a asp-controller="Category" asp-action="Index" class="btn btn-secondary"><i class="fa-sharp fa-solid fa-arrow-left"></i> Back</a>
+    </div>
+</form>

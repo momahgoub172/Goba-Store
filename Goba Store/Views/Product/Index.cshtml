@@ -1,0 +1,61 @@
+﻿@model IEnumerable<Product>
+@{
+    var title = "Products";
+    Layout = "_Layout";
+}
+
+<div class="container p-3">
+    <div class="pb-5 pt-5 row justify-content-between">
+        <div class="col-6">
+            <h2>Product List</h2>
+        </div>
+        <div class="col-6 text-right ">
+            <a asp-controller="Product" asp-action="Create" class="btn btn-primary">
+                <i class="fas fa-plus"></i> &nbsp; Create a new Product
+            </a>
+        </div>
+    </div>
+</div>
+<br/> <br/>
+<div class="container">
+    @if (Model.Count() > 0)
+    {
+        <table class="table table-striped table-bordered">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Image</th>
+                <th>Category</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.Price</td>
+                    <td>
+                        <img src="@Constants.ImagePath@item.Image" alt="@item.Name" width="100"/>
+                    </td>
+                    <td>@item.Category.Name</td>
+                    <td class="text-center p-2">
+                        <a asp-action="Edit" asp-route-Id="@item.Id" class="btn btn-warning btn-sm">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </a>
+                        <a asp-action="Delete" asp-route-Id="@item.Id" class="btn btn-danger btn-sm">
+                            <i class="fa-solid fa-trash-can" style="color: #511f1f;"></i>
+                        </a>
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <div class="alert alert-danger" role="alert">
+            There are no products to display.
+        </div>
+    }
+</div>

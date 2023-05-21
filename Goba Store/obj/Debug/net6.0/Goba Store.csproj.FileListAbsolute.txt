@@ -1,0 +1,189 @@
+/media/goba/Studing/Goba Store/Goba Store/bin/Debug/net6.0/appsettings.Development.json
+/media/goba/Studing/Goba Store/Goba Store/bin/Debug/net6.0/appsettings.json
+/media/goba/Studing/Goba Store/Goba Store/bin/Debug/net6.0/Goba Store.staticwebassets.runtime.json
+/media/goba/Studing/Goba Store/Goba Store/bin/Debug/net6.0/Goba Store
+/media/goba/Studing/Goba Store/Goba Store/bin/Debug/net6.0/Goba Store.deps.json
+/media/goba/Studing/Goba Store/Goba Store/bin/Debug/net6.0/Goba Store.runtimeconfig.json
+/media/goba/Studing/Goba Store/Goba Store/bin/Debug/net6.0/Goba Store.dll
+/media/goba/Studing/Goba Store/Goba Store/bin/Debug/net6.0/ref/Goba Store.dll
+/media/goba/Studing/Goba Store/Goba Store/bin/Debug/net6.0/Goba Store.pdb
+/media/goba/Studing/Goba Store/Goba Store/bin/Debug/net6.0/Humanizer.dll
+/media/goba/Studing/Goba Store/Goba Store/bin/Debug/net6.0/Microsoft.Data.SqlClient.dll
+/media/goba/Studing/Goba Store/Goba Store/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll
+/media/goba/Studing/Goba Store/Goba Store/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/media/goba/Studing/Goba Store/Goba Store/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Design.dll
+/media/goba/Studing/Goba Store/Goba Store/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Relational.dll
+/media/goba/Studing/Goba Store/Goba Store/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.SqlServer.dll
+/media/goba/Studing/Goba Store/Goba Store/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll
+/media/goba/Studing/Goba Store/Goba Store/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.dll
+/media/goba/Studing/Goba Store/Goba Store/bin/Debug/net6.0/Microsoft.Identity.Client.dll
+/media/goba/Studing/Goba Store/Goba Store/bin/Debug/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/media/goba/Studing/Goba Store/Goba Store/bin/Debug/net6.0/Microsoft.IdentityModel.Logging.dll
+/media/goba/Studing/Goba Store/Goba Store/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.dll
+/media/goba/Studing/Goba Store/Goba Store/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/media/goba/Studing/Goba Store/Goba Store/bin/Debug/net6.0/Microsoft.IdentityModel.Tokens.dll
+/media/goba/Studing/Goba Store/Goba Store/bin/Debug/net6.0/Microsoft.Win32.SystemEvents.dll
+/media/goba/Studing/Goba Store/Goba Store/bin/Debug/net6.0/System.Configuration.ConfigurationManager.dll
+/media/goba/Studing/Goba Store/Goba Store/bin/Debug/net6.0/System.Diagnostics.DiagnosticSource.dll
+/media/goba/Studing/Goba Store/Goba Store/bin/Debug/net6.0/System.Drawing.Common.dll
+/media/goba/Studing/Goba Store/Goba Store/bin/Debug/net6.0/System.IdentityModel.Tokens.Jwt.dll
+/media/goba/Studing/Goba Store/Goba Store/bin/Debug/net6.0/System.Runtime.Caching.dll
+/media/goba/Studing/Goba Store/Goba Store/bin/Debug/net6.0/System.Security.Cryptography.ProtectedData.dll
+/media/goba/Studing/Goba Store/Goba Store/bin/Debug/net6.0/System.Security.Permissions.dll
+/media/goba/Studing/Goba Store/Goba Store/bin/Debug/net6.0/System.Windows.Extensions.dll
+/media/goba/Studing/Goba Store/Goba Store/bin/Debug/net6.0/runtimes/unix/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+/media/goba/Studing/Goba Store/Goba Store/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+/media/goba/Studing/Goba Store/Goba Store/bin/Debug/net6.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
+/media/goba/Studing/Goba Store/Goba Store/bin/Debug/net6.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+/media/goba/Studing/Goba Store/Goba Store/bin/Debug/net6.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+/media/goba/Studing/Goba Store/Goba Store/bin/Debug/net6.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+/media/goba/Studing/Goba Store/Goba Store/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll
+/media/goba/Studing/Goba Store/Goba Store/bin/Debug/net6.0/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll
+/media/goba/Studing/Goba Store/Goba Store/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll
+/media/goba/Studing/Goba Store/Goba Store/bin/Debug/net6.0/runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll
+/media/goba/Studing/Goba Store/Goba Store/bin/Debug/net6.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+/media/goba/Studing/Goba Store/Goba Store/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll
+/media/goba/Studing/Goba Store/Goba Store/obj/Debug/net6.0/Goba Store.csproj.AssemblyReference.cache
+/media/goba/Studing/Goba Store/Goba Store/obj/Debug/net6.0/Goba Store.GeneratedMSBuildEditorConfig.editorconfig
+/media/goba/Studing/Goba Store/Goba Store/obj/Debug/net6.0/Goba Store.AssemblyInfoInputs.cache
+/media/goba/Studing/Goba Store/Goba Store/obj/Debug/net6.0/Goba Store.AssemblyInfo.cs
+/media/goba/Studing/Goba Store/Goba Store/obj/Debug/net6.0/Goba Store.csproj.CoreCompileInputs.cache
+/media/goba/Studing/Goba Store/Goba Store/obj/Debug/net6.0/Goba Store.MvcApplicationPartsAssemblyInfo.cache
+/media/goba/Studing/Goba Store/Goba Store/obj/Debug/net6.0/Goba Store.RazorAssemblyInfo.cache
+/media/goba/Studing/Goba Store/Goba Store/obj/Debug/net6.0/Goba Store.RazorAssemblyInfo.cs
+/media/goba/Studing/Goba Store/Goba Store/obj/Debug/net6.0/staticwebassets.build.json
+/media/goba/Studing/Goba Store/Goba Store/obj/Debug/net6.0/staticwebassets.development.json
+/media/goba/Studing/Goba Store/Goba Store/obj/Debug/net6.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
+/media/goba/Studing/Goba Store/Goba Store/obj/Debug/net6.0/scopedcss/bundle/Goba Store.styles.css
+/media/goba/Studing/Goba Store/Goba Store/obj/Debug/net6.0/scopedcss/projectbundle/Goba Store.bundle.scp.css
+/media/goba/Studing/Goba Store/Goba Store/obj/Debug/net6.0/Goba Store.csproj.CopyComplete
+/media/goba/Studing/Goba Store/Goba Store/obj/Debug/net6.0/Goba Store.dll
+/media/goba/Studing/Goba Store/Goba Store/obj/Debug/net6.0/ref/Goba Store.dll
+/media/goba/Studing/Goba Store/Goba Store/obj/Debug/net6.0/Goba Store.pdb
+/media/goba/Studing/Goba Store/Goba Store/obj/Debug/net6.0/Goba Store.genruntimeconfig.cache
+H:\Goba Store\Goba Store\bin\Debug\net6.0\appsettings.Development.json
+H:\Goba Store\Goba Store\bin\Debug\net6.0\appsettings.json
+H:\Goba Store\Goba Store\bin\Debug\net6.0\Goba Store.staticwebassets.runtime.json
+H:\Goba Store\Goba Store\bin\Debug\net6.0\Goba Store.exe
+H:\Goba Store\Goba Store\bin\Debug\net6.0\Goba Store.deps.json
+H:\Goba Store\Goba Store\bin\Debug\net6.0\Goba Store.runtimeconfig.json
+H:\Goba Store\Goba Store\bin\Debug\net6.0\Goba Store.dll
+H:\Goba Store\Goba Store\bin\Debug\net6.0\ref\Goba Store.dll
+H:\Goba Store\Goba Store\bin\Debug\net6.0\Goba Store.pdb
+H:\Goba Store\Goba Store\bin\Debug\net6.0\Humanizer.dll
+H:\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+H:\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+H:\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+H:\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+H:\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+H:\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+H:\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+H:\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+H:\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+H:\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+H:\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+H:\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+H:\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+H:\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+H:\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+H:\Goba Store\Goba Store\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+H:\Goba Store\Goba Store\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+H:\Goba Store\Goba Store\bin\Debug\net6.0\System.Drawing.Common.dll
+H:\Goba Store\Goba Store\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+H:\Goba Store\Goba Store\bin\Debug\net6.0\System.Runtime.Caching.dll
+H:\Goba Store\Goba Store\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+H:\Goba Store\Goba Store\bin\Debug\net6.0\System.Security.Permissions.dll
+H:\Goba Store\Goba Store\bin\Debug\net6.0\System.Windows.Extensions.dll
+H:\Goba Store\Goba Store\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+H:\Goba Store\Goba Store\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+H:\Goba Store\Goba Store\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+H:\Goba Store\Goba Store\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+H:\Goba Store\Goba Store\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+H:\Goba Store\Goba Store\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+H:\Goba Store\Goba Store\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+H:\Goba Store\Goba Store\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+H:\Goba Store\Goba Store\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+H:\Goba Store\Goba Store\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+H:\Goba Store\Goba Store\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+H:\Goba Store\Goba Store\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+H:\Goba Store\Goba Store\obj\Debug\net6.0\Goba Store.csproj.AssemblyReference.cache
+H:\Goba Store\Goba Store\obj\Debug\net6.0\Goba Store.GeneratedMSBuildEditorConfig.editorconfig
+H:\Goba Store\Goba Store\obj\Debug\net6.0\Goba Store.AssemblyInfoInputs.cache
+H:\Goba Store\Goba Store\obj\Debug\net6.0\Goba Store.AssemblyInfo.cs
+H:\Goba Store\Goba Store\obj\Debug\net6.0\Goba Store.csproj.CoreCompileInputs.cache
+H:\Goba Store\Goba Store\obj\Debug\net6.0\Goba Store.MvcApplicationPartsAssemblyInfo.cache
+H:\Goba Store\Goba Store\obj\Debug\net6.0\Goba Store.RazorAssemblyInfo.cache
+H:\Goba Store\Goba Store\obj\Debug\net6.0\Goba Store.RazorAssemblyInfo.cs
+H:\Goba Store\Goba Store\obj\Debug\net6.0\staticwebassets.build.json
+H:\Goba Store\Goba Store\obj\Debug\net6.0\staticwebassets.development.json
+H:\Goba Store\Goba Store\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+H:\Goba Store\Goba Store\obj\Debug\net6.0\scopedcss\bundle\Goba Store.styles.css
+H:\Goba Store\Goba Store\obj\Debug\net6.0\scopedcss\projectbundle\Goba Store.bundle.scp.css
+H:\Goba Store\Goba Store\obj\Debug\net6.0\Goba Store.csproj.CopyComplete
+H:\Goba Store\Goba Store\obj\Debug\net6.0\Goba Store.dll
+H:\Goba Store\Goba Store\obj\Debug\net6.0\ref\Goba Store.dll
+H:\Goba Store\Goba Store\obj\Debug\net6.0\Goba Store.pdb
+H:\Goba Store\Goba Store\obj\Debug\net6.0\Goba Store.genruntimeconfig.cache
+G:\Goba Store\Goba Store\bin\Debug\net6.0\appsettings.Development.json
+G:\Goba Store\Goba Store\bin\Debug\net6.0\appsettings.json
+G:\Goba Store\Goba Store\bin\Debug\net6.0\Goba Store.staticwebassets.runtime.json
+G:\Goba Store\Goba Store\bin\Debug\net6.0\Goba Store.exe
+G:\Goba Store\Goba Store\bin\Debug\net6.0\Goba Store.deps.json
+G:\Goba Store\Goba Store\bin\Debug\net6.0\Goba Store.runtimeconfig.json
+G:\Goba Store\Goba Store\bin\Debug\net6.0\Goba Store.dll
+G:\Goba Store\Goba Store\bin\Debug\net6.0\ref\Goba Store.dll
+G:\Goba Store\Goba Store\bin\Debug\net6.0\Goba Store.pdb
+G:\Goba Store\Goba Store\bin\Debug\net6.0\Humanizer.dll
+G:\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+G:\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+G:\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+G:\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+G:\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+G:\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+G:\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+G:\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+G:\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+G:\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+G:\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+G:\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+G:\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+G:\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+G:\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+G:\Goba Store\Goba Store\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+G:\Goba Store\Goba Store\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+G:\Goba Store\Goba Store\bin\Debug\net6.0\System.Drawing.Common.dll
+G:\Goba Store\Goba Store\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+G:\Goba Store\Goba Store\bin\Debug\net6.0\System.Runtime.Caching.dll
+G:\Goba Store\Goba Store\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+G:\Goba Store\Goba Store\bin\Debug\net6.0\System.Security.Permissions.dll
+G:\Goba Store\Goba Store\bin\Debug\net6.0\System.Windows.Extensions.dll
+G:\Goba Store\Goba Store\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+G:\Goba Store\Goba Store\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+G:\Goba Store\Goba Store\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+G:\Goba Store\Goba Store\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+G:\Goba Store\Goba Store\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+G:\Goba Store\Goba Store\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+G:\Goba Store\Goba Store\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+G:\Goba Store\Goba Store\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+G:\Goba Store\Goba Store\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+G:\Goba Store\Goba Store\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+G:\Goba Store\Goba Store\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+G:\Goba Store\Goba Store\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+G:\Goba Store\Goba Store\obj\Debug\net6.0\Goba Store.csproj.AssemblyReference.cache
+G:\Goba Store\Goba Store\obj\Debug\net6.0\Goba Store.GeneratedMSBuildEditorConfig.editorconfig
+G:\Goba Store\Goba Store\obj\Debug\net6.0\Goba Store.AssemblyInfoInputs.cache
+G:\Goba Store\Goba Store\obj\Debug\net6.0\Goba Store.AssemblyInfo.cs
+G:\Goba Store\Goba Store\obj\Debug\net6.0\Goba Store.csproj.CoreCompileInputs.cache
+G:\Goba Store\Goba Store\obj\Debug\net6.0\Goba Store.MvcApplicationPartsAssemblyInfo.cache
+G:\Goba Store\Goba Store\obj\Debug\net6.0\Goba Store.RazorAssemblyInfo.cache
+G:\Goba Store\Goba Store\obj\Debug\net6.0\Goba Store.RazorAssemblyInfo.cs
+G:\Goba Store\Goba Store\obj\Debug\net6.0\staticwebassets.build.json
+G:\Goba Store\Goba Store\obj\Debug\net6.0\staticwebassets.development.json
+G:\Goba Store\Goba Store\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+G:\Goba Store\Goba Store\obj\Debug\net6.0\scopedcss\bundle\Goba Store.styles.css
+G:\Goba Store\Goba Store\obj\Debug\net6.0\scopedcss\projectbundle\Goba Store.bundle.scp.css
+G:\Goba Store\Goba Store\obj\Debug\net6.0\Goba Store.csproj.CopyComplete
+G:\Goba Store\Goba Store\obj\Debug\net6.0\Goba Store.dll
+G:\Goba Store\Goba Store\obj\Debug\net6.0\ref\Goba Store.dll
+G:\Goba Store\Goba Store\obj\Debug\net6.0\Goba Store.pdb
+G:\Goba Store\Goba Store\obj\Debug\net6.0\Goba Store.genruntimeconfig.cache
