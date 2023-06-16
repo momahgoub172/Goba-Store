@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\Goba Store\\Goba Store\\Goba Store.csproj": {}
+    "G:\\Projects\\Goba Store\\Goba Store\\Goba Store.csproj": {}
   },
   "projects": {
-    "G:\\Goba Store\\Goba Store\\Goba Store.csproj": {
+    "G:\\Projects\\Goba Store\\Goba Store\\Goba Store.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Goba Store\\Goba Store\\Goba Store.csproj",
+        "projectUniqueName": "G:\\Projects\\Goba Store\\Goba Store\\Goba Store.csproj",
         "projectName": "Goba Store",
-        "projectPath": "G:\\Goba Store\\Goba Store\\Goba Store.csproj",
+        "projectPath": "G:\\Projects\\Goba Store\\Goba Store\\Goba Store.csproj",
         "packagesPath": "C:\\Users\\GoBa\\.nuget\\packages\\",
-        "outputPath": "G:\\Goba Store\\Goba Store\\obj\\",
+        "outputPath": "G:\\Projects\\Goba Store\\Goba Store\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,6 +44,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.15, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[6.0.15, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.15, )"
@@ -63,6 +71,14 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.9, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.13, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.3.0, )"
             }
           },
           "imports": [
@@ -83,7 +99,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.116\\RuntimeIdentifierGraph.json"
         }
       }
     }
