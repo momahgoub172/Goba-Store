@@ -2,12 +2,14 @@
 using Goba_Store.Models;
 using Goba_Store.Services;
 using Goba_Store.View_Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
 namespace Goba_Store.Controllers;
 
+[Authorize(Policy = "AdminOnly")]
 public class ProductController : Controller
 {
     private readonly AppDbContext _db;
@@ -27,16 +29,17 @@ public class ProductController : Controller
     }
 
     [HttpGet]
+    [AllowAnonymous]
     public IActionResult Details(int? id)
     {
-        List<CartItemViewModel> ShoppingCartList = new List<CartItemViewModel>();
+        List<HomeProductViewModel> ShoppingCartList = new List<HomeProductViewModel>();
         if (HttpContext.Session.GetObj<IEnumerable<ShoppingCart>>(Constants.CartSession) != null
            && HttpContext.Session.GetObj<IEnumerable<ShoppingCart>>(Constants.CartSession).ToList().Count > 0)
         {
-            ShoppingCartList = HttpContext.Session.GetObj<IEnumerable<CartItemViewModel>>(Constants.CartSession).ToList();
+            ShoppingCartList = HttpContext.Session.GetObj<IEnumerable<HomeProductViewModel>>(Constants.CartSession).ToList();
         }
 
-        CartItemViewModel model = new CartItemViewModel()
+        HomeProductViewModel model = new HomeProductViewModel()
         {
             Product = _db.Products.Include(p => p.Category)
                 .Where(p => p.Id == id).FirstOrDefault()

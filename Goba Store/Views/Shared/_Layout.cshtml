@@ -25,33 +25,38 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="dropdown" data-bs-toggle="dropdown" aria-expanded="false">CMS</a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdown">
-                                <li><a class="nav-link text-dark dropdown-item" asp-area="" asp-controller="Category" asp-action="Index">Categories</a></li>
-                                <li><a class="nav-link text-dark" asp-area="" asp-controller="Product" asp-action="Index">Products</a></li>
-                                <div class="dropdown-divider"></div>
-                                <li><a class="nav-link text-dark" style="font-size:11px" asp-area="Identity" asp-page="/Account/Register" >Create a Admin Account</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            @if (HttpContextAccessor.HttpContext.Session.GetObj<List<ShoppingCart>>(Constants.CartSession) != null)
-                            {
-                                <a asp-action="Index" asp-controller="">
-                                    @{
-                                        var shoppingCartItemsCount = HttpContextAccessor.HttpContext.Session.GetObj<List<ShoppingCart>>(Constants.CartSession).Count;
-                                    }
-                                    <i class="fa fa-shopping-cart"></i>&nbsp;(@shoppingCartItemsCount)
-                                </a>
-                            }
-                            else
-                            {
-                                <a class="nav-link">
-                                    <i class="fa fa-shopping-cart"></i>&nbsp;(0)
-                                </a>
-                            }
-                        </li>
+                        @if (User.IsInRole(Constants.AdminRole))
+                        {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdown" data-bs-toggle="dropdown" aria-expanded="false">CMS</a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdown">
+                                    <li><a class="nav-link text-dark dropdown-item" asp-area="" asp-controller="Category" asp-action="Index">Categories</a></li>
+                                    <li><a class="nav-link text-dark" asp-area="" asp-controller="Product" asp-action="Index">Products</a></li>
+                                    <div class="dropdown-divider"></div>
+                                    <li><a class="nav-link text-dark" style="font-size:11px" asp-area="Identity" asp-page="/Account/Register" >Create a Admin Account</a></li>
+                                </ul>
+                            </li>
+                        }
+                        else
+                        {
+                            <li>
+                                @if (HttpContextAccessor.HttpContext.Session.GetObj<List<ShoppingCart>>(Constants.CartSession) != null)
+                                {
+                                    <a asp-action="Index" asp-controller="Cart">
+                                        @{
+                                            var shoppingCartItemsCount = HttpContextAccessor.HttpContext.Session.GetObj<List<ShoppingCart>>(Constants.CartSession).Count;
+                                        }
+                                        <i class="fa fa-shopping-cart"></i>&nbsp;(@shoppingCartItemsCount)
+                                    </a>
+                                }
+                                else
+                                {
+                                    <a class="nav-link" asp-controller="Cart" asp-action="Index">
+                                        <i class="fa fa-shopping-cart"></i>&nbsp;(0)
+                                    </a>
+                                }
+                            </li>
+                        }
                     </ul>
                     <partial name="_LoginPartial" />
                 </div>

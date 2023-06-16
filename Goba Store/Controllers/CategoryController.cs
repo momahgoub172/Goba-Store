@@ -1,10 +1,12 @@
 ﻿using Goba_Store.Data;
 using Goba_Store.Models;
 using Goba_Store.View_Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Goba_Store.Controllers;
 
+[Authorize(Policy = "AdminOnly")]
 public class CategoryController : Controller
 {
     private readonly AppDbContext _db;

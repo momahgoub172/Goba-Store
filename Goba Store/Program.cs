@@ -1,3 +1,4 @@
+using Goba_Store;
 using Goba_Store.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
@@ -9,6 +10,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddIdentity<IdentityUser,IdentityRole>().AddDefaultTokenProviders().AddDefaultUI()
     .AddEntityFrameworkStores<AppDbContext>();
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("AdminOnly",policy=>policy.RequireRole(Constants.AdminRole));
+});
 
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddSession(options =>

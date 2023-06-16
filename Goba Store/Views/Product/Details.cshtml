@@ -1,4 +1,4 @@
-﻿@model Goba_Store.View_Models.CartItemViewModel
+﻿@model Goba_Store.View_Models.HomeProductViewModel
 
 <div class="container">
     <form method="post" asp-action="AddToCart" asp-controller="Cart" asp-route-id="@Model.Product.Id" >
@@ -21,9 +21,9 @@
                         }
                         else
                     {
-                        <a asp-action="RemoveFromCart" asp-controller="Cart" asp-route-id="@Model.Product.Id" class="btn btn-danger btn-rounded mr-1"><i class="fa fa-shopping-cart"></i> Remove From Cart</a>
+                        <a asp-action="RemoveFromCart" asp-controller="Cart" asp-route-id="@Model.Product.Id" asp-route-controllername="home" class="btn btn-danger btn-rounded mr-1"><i class="fa fa-shopping-cart"></i> Remove From Cart</a>
                     }
-                    <a asp-action="index" class="btn btn-outline-dark btn-rounded"><i class="fa-sharp fa-solid fa-arrow-left"></i> Back</a>
+                    <a asp-action="index" asp-controller="Home" class="btn btn-outline-dark btn-rounded"><i class="fa-sharp fa-solid fa-arrow-left"></i> Back</a>
                 </div>
             </div>
         </div>
