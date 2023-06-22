@@ -465,3 +465,4 @@ G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.OpenApi.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Mailjet.Client.dll

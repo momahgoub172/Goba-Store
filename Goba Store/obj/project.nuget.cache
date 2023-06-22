@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "5+vSWTXyR52oZQ9QwxjfW6FjeGO5yfvctJoCS5IXCBIPqYxioB+X1t6NUG9+cSTY+XgtMJhk5ZtY4NDW29XzlA==",
+  "dgSpecHash": "SepTEwOlWa9K/8RA2D/+mOCinlRzgkjYPM6hazGHD4TjjaIX8R8M3U7P0Vp1+WyQAfFrzRpb09/0OZCkl0mlCg==",
   "success": true,
   "projectFilePath": "G:\\Projects\\Goba Store\\Goba Store\\Goba Store.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\GoBa\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\GoBa\\.nuget\\packages\\mailjet.api\\3.0.0\\mailjet.api.3.0.0.nupkg.sha512",
     "C:\\Users\\GoBa\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
     "C:\\Users\\GoBa\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",
     "C:\\Users\\GoBa\\.nuget\\packages\\messagepackanalyzer\\2.1.152\\messagepackanalyzer.2.1.152.nupkg.sha512",

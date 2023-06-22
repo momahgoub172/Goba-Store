@@ -62,9 +62,7 @@ namespace Goba_Store.Controllers
             HttpContext.Session.SetObj(Constants.CartSession, ShoppingCartList);
             return RedirectToAction("index","Home");
         }
-
-
-
+        
         public IActionResult RemoveFromCart(int id,string? controllername)
         {
             /*
