@@ -86,5 +86,7 @@ namespace Goba_Store.Controllers
             HttpContext.Session.SetObj(Constants.CartSession, ShoppingCartList);
             return RedirectToAction("index",controllername);
         }
+        
+        //TODO:Inquiry confirmation
     }
 }

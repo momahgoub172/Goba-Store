@@ -1,4 +1,5 @@
-﻿using Goba_Store.Data;
+﻿using AutoMapper;
+using Goba_Store.Data;
 using Goba_Store.Models;
 using Goba_Store.View_Models;
 using Microsoft.AspNetCore.Authorization;
@@ -6,14 +7,16 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Goba_Store.Controllers;
 
-[Authorize(Policy = "AdminOnly")]
+[Authorize(Roles = Constants.AdminRole)]
 public class CategoryController : Controller
 {
     private readonly AppDbContext _db;
+    private readonly IMapper _mapper;
 
-    public CategoryController(AppDbContext Db)
+    public CategoryController(AppDbContext Db, IMapper mapper)
     {
         _db = Db;
+        _mapper = mapper;
     }
     // GET
     public IActionResult Index()
@@ -33,11 +36,13 @@ public class CategoryController : Controller
         if (ModelState.IsValid)
         {
             //Map viewModel To Category
-            var Cat = new Category
-            {
-                Name = viewModel.Name,
-                DisplayOrder = viewModel.DisplayOrder
-            };
+            //var Cat = new Category
+            //{
+            //    Name = viewModel.Name,
+            //    DisplayOrder = viewModel.DisplayOrder
+            //};
+            var Cat = _mapper.Map<Category>(viewModel);
+
             _db.Categories.Add(Cat);
             _db.SaveChanges();
             return RedirectToAction(nameof(Index));
@@ -56,15 +61,16 @@ public class CategoryController : Controller
         return View(Cat);
     }
     [HttpPost]
-    public IActionResult Edit(Category Cat)
+    public IActionResult Edit(CategoryViewModel viewModel)
     {
         if (ModelState.IsValid)
         {
+            var Cat = _mapper.Map<Category>(viewModel);
             _db.Categories.Update(Cat);
             _db.SaveChanges();
             return RedirectToAction(nameof(Index));
         }
-        return View(Cat);
+        return View(viewModel);
     }
     [HttpGet]
     public IActionResult Delete(int id)

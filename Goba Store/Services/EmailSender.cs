@@ -14,7 +14,9 @@ public class EmailSender : IEmailSender
 
     public async Task Exexute(string email, string subject, string htmlMessage)
     {
-        /* MailjetClient client = new MailjetClient("89d99fca58b88f88181f6a08dbb7f341","8a2365e2e35f57c75955444901e7ff17");
+        /*
+         //TODO:Adding key and secret to appsetting
+        MailjetClient client = new MailjetClient("89d99fca58b88f88181f6a08dbb7f341","8a2365e2e35f57c75955444901e7ff17");
          var request = new MailjetRequest
              {
                  Resource = Send.Resource,

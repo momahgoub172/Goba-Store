@@ -29,6 +29,7 @@ builder.Services.AddSession(options =>
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddTransient<IEmailSender, EmailSender>();
+builder.Services.AddAutoMapper(typeof(Program));
 
 
 

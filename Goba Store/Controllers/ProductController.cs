@@ -1,4 +1,5 @@
-﻿using Goba_Store.Data;
+﻿using AutoMapper;
+using Goba_Store.Data;
 using Goba_Store.Models;
 using Goba_Store.Services;
 using Goba_Store.View_Models;
@@ -9,16 +10,18 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Goba_Store.Controllers;
 
-[Authorize(Policy = "AdminOnly")]
+[Authorize(Roles = Constants.AdminRole)]
 public class ProductController : Controller
 {
     private readonly AppDbContext _db;
     private readonly IWebHostEnvironment _environment;
+    private readonly IMapper _mapper;
 
-    public ProductController(AppDbContext db, IWebHostEnvironment environment)
+    public ProductController(AppDbContext db, IWebHostEnvironment environment, IMapper mapper)
     {
         _db = db;
         _environment = environment;
+        _mapper = mapper;
     }
 
     public IActionResult Index()
@@ -69,8 +72,9 @@ public class ProductController : Controller
     }
     
     [HttpPost]
-    public IActionResult Create(Product product)
+    public IActionResult Create(ProductViewModel viewModel)
     {
+        var product = _mapper.Map<Product>(viewModel);
         if (!ModelState.IsValid)
         {
             IEnumerable<SelectListItem> CategoryDropDown = _db.Categories.Select(i => new SelectListItem
@@ -80,22 +84,11 @@ public class ProductController : Controller
             });
 
             ViewBag.CategoryDropDown = CategoryDropDown;
-            return View(product);
+            return View(viewModel);
         }
-        
+
         //Upload image
-        var files = Request.Form.Files;
-        var rootPath = _environment.WebRootPath;
-        var uploadedFile = rootPath + Constants.ImagePath;
-        var fileName = Guid.NewGuid().ToString();
-        var extention = Path.GetExtension(files[0].FileName);
-        using (FileStream stream = new FileStream(Path.Combine(uploadedFile,fileName+extention),FileMode.Create))
-        {
-            files[0].CopyTo(stream);
-        }
-
-
-        product.Image = fileName + extention;
+        product.Image = UploadImage();
         _db.Products.Add(product);
         _db.SaveChanges();
         return RedirectToAction(nameof(Index));
@@ -107,6 +100,7 @@ public class ProductController : Controller
         if (id == null || id == 0)
             return NotFound();
         var product = _db.Products.Find(id);
+        var viewModel = _mapper.Map<ProductViewModel>(product);
         if (product == null)
             return NotFound();
         
@@ -117,46 +111,38 @@ public class ProductController : Controller
         });
 
         ViewBag.CategoryDropDown = CategoryDropDown;
-        return View(product);
+        return View(viewModel);
     }
     [HttpPost]
-    public IActionResult Edit(Product product)
+    public IActionResult Edit(ProductViewModel viewModel)
     {
         if (ModelState.IsValid)
-        {   var files = Request.Form.Files;
-            var rootPath = _environment.WebRootPath;
-            if (files.Count > 0)
-            {
-                var uploadedFile = rootPath + Constants.ImagePath;
-                var fileName = Guid.NewGuid().ToString();
-                var extention = Path.GetExtension(files[0].FileName);
-                //delete old image
-                var oldImage = Path.Combine(uploadedFile, _db.Products.AsNoTracking().FirstOrDefault(p => p.Id == product.Id).Image);
-                if (System.IO.File.Exists(oldImage))
-                {
-                    System.IO.File.Delete(oldImage);
-                }
-                //create new one and save it
-                using (FileStream stream = new FileStream(Path.Combine(uploadedFile,fileName+extention),FileMode.Create))
-                {
-                    files[0].CopyTo(stream);
-                }
+        {
+            var product = _mapper.Map<Product>(viewModel);
 
-                product.Image = fileName + extention;
+            if (Request.Form.Files.Count > 0)
+            {
+                // Delete old image
+                DeleteImage(product.Id);
+                // Then upload the new one
+                product.Image = UploadImage();
             }
             else
             {
-                product.Image = _db.Products.AsNoTracking().FirstOrDefault(p => p.Id == product.Id).Image;
+                // keep the old image
+                var existingProduct = _db.Products.AsNoTracking().FirstOrDefault(p => p.Id == product.Id);
+                product.Image = existingProduct.Image;
             }
 
             _db.Products.Update(product);
             _db.SaveChanges();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction("Index");
         }
 
-        return View(product);
+        return View(viewModel);
     }
-    
+
+
     [HttpGet]
     public IActionResult Delete(int? id)
     {
@@ -168,21 +154,46 @@ public class ProductController : Controller
         return View(product);
     }
     
-    public IActionResult DeletePost(int? id)
+    public IActionResult DeletePost(int id)
     {
         var product = _db.Products.FirstOrDefault(i=>i.Id ==id);
         if (product == null)
             return NotFound();
-        var uploadedFile = _environment.WebRootPath + Constants.ImagePath;
-        //delete image
-        var oldImage = Path.Combine(uploadedFile, _db.Products.AsNoTracking().FirstOrDefault(p => p.Id == product.Id).Image);
+        //Delete old image
+        DeleteImage(id);
+        _db.Products.Remove(product);
+        _db.SaveChanges();
+        return RedirectToAction(nameof(Index));
+    }
+
+
+    private string UploadImage()
+    {
+        var files = Request.Form.Files;
+        var rootPath = _environment.WebRootPath;
+        var uploadedFile = rootPath + Constants.ImagePath;
+        var fileName = Guid.NewGuid().ToString();
+        var extention = Path.GetExtension(files[0].FileName);
+        //create new one and save it
+        using (FileStream stream = new FileStream(Path.Combine(uploadedFile, fileName + extention), FileMode.Create))
+        {
+            files[0].CopyTo(stream);
+        }
+
+        return fileName + extention;
+    }
+
+    private void DeleteImage(int ProductId)
+    {
+        var rootPath = _environment.WebRootPath;
+        var uploadedFile = rootPath + Constants.ImagePath;
+        var extention = Path.GetExtension(_db.Products.AsNoTracking().Where(p => p.Id == ProductId).FirstOrDefault().Image);
+        //delete old image
+        var oldImage = Path.Combine(uploadedFile, _db.Products.AsNoTracking().Where(p => p.Id == ProductId).FirstOrDefault().Image+extention);
         if (System.IO.File.Exists(oldImage))
         {
             System.IO.File.Delete(oldImage);
         }
-        _db.Products.Remove(product);
-        _db.SaveChanges();
-        return RedirectToAction(nameof(Index));
     }
 }
 

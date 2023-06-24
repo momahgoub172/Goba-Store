@@ -4,6 +4,7 @@ namespace Goba_Store.View_Models;
 
 public class CategoryViewModel
 {
+    public int Id { get; set; }
     [Required]
     [MaxLength(150)]
     [Display(Name = "Category Name")]

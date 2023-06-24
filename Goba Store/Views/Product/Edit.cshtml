@@ -1,9 +1,11 @@
-﻿@model Product
+﻿
+@model Goba_Store.View_Models.ProductViewModel
 
 <h2>Edit Product</h2>
 
 <div class="container row">
     <form method="post" asp-controller="Product" asp-action="Edit"  class="col-8" enctype="multipart/form-data">
+        <input asp-for="Id" hidden class="form-control" />
         <div class="form-group">
             <label asp-for="Name" class="form-label">Name</label>
             <input asp-for="Name" class="form-control" />
