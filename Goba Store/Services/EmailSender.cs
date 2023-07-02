@@ -7,6 +7,13 @@ namespace Goba_Store.Services;
 
 public class EmailSender : IEmailSender
 {
+    private readonly IConfiguration _config;
+    public MailJetSettings _mailJetSettings { get; set; }
+
+    public EmailSender(IConfiguration config)
+    {
+        _config = config;
+    }
     public Task SendEmailAsync(string email, string subject, string htmlMessage)
     {
         return Exexute(email, subject, htmlMessage);
@@ -14,9 +21,9 @@ public class EmailSender : IEmailSender
 
     public async Task Exexute(string email, string subject, string htmlMessage)
     {
-        /*
-         //TODO:Adding key and secret to appsetting
-        MailjetClient client = new MailjetClient("89d99fca58b88f88181f6a08dbb7f341","8a2365e2e35f57c75955444901e7ff17");
+        /*_mailJetSettings = _config.GetSection("MailJet").Get<MailJetSettings>();
+        
+        MailjetClient client = new MailjetClient(_mailJetSettings.ApiKey,_mailJetSettings.ApiSecret);
          var request = new MailjetRequest
              {
                  Resource = Send.Resource,
