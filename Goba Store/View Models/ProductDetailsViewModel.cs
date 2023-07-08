@@ -2,9 +2,9 @@
 
 namespace Goba_Store.View_Models;
 
-public class HomeProductViewModel
+public class ProductDetailsViewModel
 {
-    public HomeProductViewModel()
+    public ProductDetailsViewModel()
     {
         Product = new Product();
     }

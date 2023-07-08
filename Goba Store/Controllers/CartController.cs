@@ -19,12 +19,12 @@ namespace Goba_Store.Controllers
         [Authorize]
         public IActionResult Index()
         {
-            List<HomeProductViewModel> ShoppingCartList = new List<HomeProductViewModel>();
+            List<ProductDetailsViewModel> ShoppingCartList = new List<ProductDetailsViewModel>();
             //get other products if there is any products in cart
             if (HttpContext.Session.GetObj<IEnumerable<ShoppingCart>>(Constants.CartSession) != null
                 && HttpContext.Session.GetObj<IEnumerable<ShoppingCart>>(Constants.CartSession).ToList().Count > 0)
             {
-                ShoppingCartList = HttpContext.Session.GetObj<IEnumerable<HomeProductViewModel>>(Constants.CartSession).ToList();
+                ShoppingCartList = HttpContext.Session.GetObj<IEnumerable<ProductDetailsViewModel>>(Constants.CartSession).ToList();
             }
 
             List<int> ProductsInCart = ShoppingCartList.Select(i => i.Product.Id).ToList();
@@ -50,15 +50,15 @@ namespace Goba_Store.Controllers
             * 3-set new session
             */
 
-            List<HomeProductViewModel> ShoppingCartList = new List<HomeProductViewModel>();
+            List<ProductDetailsViewModel> ShoppingCartList = new List<ProductDetailsViewModel>();
             //get other products if there is any products in cart
             if (HttpContext.Session.GetObj<IEnumerable<ShoppingCart>>(Constants.CartSession) != null
                && HttpContext.Session.GetObj<IEnumerable<ShoppingCart>>(Constants.CartSession).ToList().Count > 0)
             {
-                ShoppingCartList = HttpContext.Session.GetObj<IEnumerable<HomeProductViewModel>>(Constants.CartSession).ToList();
+                ShoppingCartList = HttpContext.Session.GetObj<IEnumerable<ProductDetailsViewModel>>(Constants.CartSession).ToList();
             }
             //if this product is the first product in cart
-            ShoppingCartList.Add(new HomeProductViewModel { Product = new Product {Id= id },InCart=true });
+            ShoppingCartList.Add(new ProductDetailsViewModel { Product = new Product {Id= id },InCart=true });
             HttpContext.Session.SetObj(Constants.CartSession, ShoppingCartList);
             return RedirectToAction("index","Home");
         }
@@ -71,11 +71,11 @@ namespace Goba_Store.Controllers
              * 3-set new session
              */
 
-            List<HomeProductViewModel> ShoppingCartList = new List<HomeProductViewModel>();
-            if (HttpContext.Session.GetObj<IEnumerable<HomeProductViewModel>>(Constants.CartSession) != null
-               && HttpContext.Session.GetObj<IEnumerable<HomeProductViewModel>>(Constants.CartSession).ToList().Count > 0)
+            List<ProductDetailsViewModel> ShoppingCartList = new List<ProductDetailsViewModel>();
+            if (HttpContext.Session.GetObj<IEnumerable<ProductDetailsViewModel>>(Constants.CartSession) != null
+               && HttpContext.Session.GetObj<IEnumerable<ProductDetailsViewModel>>(Constants.CartSession).ToList().Count > 0)
             {
-                ShoppingCartList = HttpContext.Session.GetObj<IEnumerable<HomeProductViewModel>>(Constants.CartSession).ToList();
+                ShoppingCartList = HttpContext.Session.GetObj<IEnumerable<ProductDetailsViewModel>>(Constants.CartSession).ToList();
             }
 
             var removedItem = ShoppingCartList.SingleOrDefault(i => i.Product.Id == id);

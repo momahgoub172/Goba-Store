@@ -16,7 +16,6 @@ builder.Services.AddAuthorization(options =>
 {
     options.AddPolicy("AdminOnly",policy=>policy.RequireRole(Constants.AdminRole));
 });
-
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddSession(options =>
 {
@@ -25,8 +24,6 @@ builder.Services.AddSession(options =>
     options.Cookie.IsEssential = true;
 
 });
-
-
 builder.Services.AddControllersWithViews();
 builder.Services.AddTransient<IEmailSender, EmailSender>();
 builder.Services.AddAutoMapper(typeof(Program));

@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using System.ComponentModel.DataAnnotations;
 
 namespace Goba_Store.View_Models
 {
@@ -14,5 +15,7 @@ namespace Goba_Store.View_Models
         public int Price { get; set; }
         public string? Image { get; set; }
         public int CategoryId { get; set; }
+
+        public IEnumerable<SelectListItem> CategoryDropDown { get; set; }
     }
 }

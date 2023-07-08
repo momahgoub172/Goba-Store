@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qIU7HYQ47u56F8ixDHsiKG6/WzOVV76awSfONes2LBA=",
+  "Hash": "SRnmyny55YCGBvvM8aPsFLJUfVvpWfvXO0DN2+SU2vI=",
   "Source": "Goba Store",
   "BasePath": "_content/Goba Store",
   "Mode": "Default",
@@ -36992,6 +36992,23 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\19a57997-7f80-4fd9-902c-ffc52cb14f77.jpeg"
     },
     {
+      "Identity": "G:\\Projects\\Goba Store\\Goba Store\\wwwroot\\images\\products\\29958fa6-b8e2-45fb-a492-e9c5a361799a.jpeg",
+      "SourceId": "Goba Store",
+      "SourceType": "Discovered",
+      "ContentRoot": "G:\\Projects\\Goba Store\\Goba Store\\wwwroot\\",
+      "BasePath": "_content/Goba Store",
+      "RelativePath": "images/products/29958fa6-b8e2-45fb-a492-e9c5a361799a.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\29958fa6-b8e2-45fb-a492-e9c5a361799a.jpeg"
+    },
+    {
       "Identity": "G:\\Projects\\Goba Store\\Goba Store\\wwwroot\\images\\products\\2d61880e-cdb5-4a8d-9445-056aec6f8053.jpeg",
       "SourceId": "Goba Store",
       "SourceType": "Discovered",
@@ -37211,6 +37228,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\products\\bedb0c31-a2c5-4cab-b825-62686708601d.jpeg"
+    },
+    {
+      "Identity": "G:\\Projects\\Goba Store\\Goba Store\\wwwroot\\images\\products\\c00465ac-7e56-4600-a255-d08cadd8d9f3.jpg",
+      "SourceId": "Goba Store",
+      "SourceType": "Discovered",
+      "ContentRoot": "G:\\Projects\\Goba Store\\Goba Store\\wwwroot\\",
+      "BasePath": "_content/Goba Store",
+      "RelativePath": "images/products/c00465ac-7e56-4600-a255-d08cadd8d9f3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\c00465ac-7e56-4600-a255-d08cadd8d9f3.jpg"
     },
     {
       "Identity": "G:\\Projects\\Goba Store\\Goba Store\\wwwroot\\images\\products\\c14e3976-c458-44c5-900a-9697a061477c.jpg",

@@ -35,14 +35,14 @@ public class ProductController : Controller
     [AllowAnonymous]
     public IActionResult Details(int? id)
     {
-        List<HomeProductViewModel> ShoppingCartList = new List<HomeProductViewModel>();
+        List<ProductDetailsViewModel> ShoppingCartList = new List<ProductDetailsViewModel>();
         if (HttpContext.Session.GetObj<IEnumerable<ShoppingCart>>(Constants.CartSession) != null
            && HttpContext.Session.GetObj<IEnumerable<ShoppingCart>>(Constants.CartSession).ToList().Count > 0)
         {
-            ShoppingCartList = HttpContext.Session.GetObj<IEnumerable<HomeProductViewModel>>(Constants.CartSession).ToList();
+            ShoppingCartList = HttpContext.Session.GetObj<IEnumerable<ProductDetailsViewModel>>(Constants.CartSession).ToList();
         }
 
-        HomeProductViewModel model = new HomeProductViewModel()
+        ProductDetailsViewModel model = new ProductDetailsViewModel()
         {
             Product = _db.Products.Include(p => p.Category)
                 .Where(p => p.Id == id).FirstOrDefault()
@@ -60,15 +60,14 @@ public class ProductController : Controller
     [HttpGet]
     public IActionResult Create()
     {
-        IEnumerable<SelectListItem> CategoryDropDown = _db.Categories.Select(i => new SelectListItem
+        ProductViewModel viewModel = new ProductViewModel();
+        viewModel.CategoryDropDown = _db.Categories.Select(i => new SelectListItem
         {
             Text = i.Name,
             Value = i.Id.ToString()
         });
 
-        ViewBag.CategoryDropDown = CategoryDropDown;
-
-        return View();
+        return View(viewModel);
     }
     
     [HttpPost]
@@ -77,13 +76,11 @@ public class ProductController : Controller
         var product = _mapper.Map<Product>(viewModel);
         if (!ModelState.IsValid)
         {
-            IEnumerable<SelectListItem> CategoryDropDown = _db.Categories.Select(i => new SelectListItem
+            viewModel.CategoryDropDown = _db.Categories.Select(i => new SelectListItem
             {
                 Text = i.Name,
                 Value = i.Id.ToString()
             });
-
-            ViewBag.CategoryDropDown = CategoryDropDown;
             return View(viewModel);
         }
 
@@ -100,17 +97,15 @@ public class ProductController : Controller
         if (id == null || id == 0)
             return NotFound();
         var product = _db.Products.Find(id);
-        var viewModel = _mapper.Map<ProductViewModel>(product);
         if (product == null)
             return NotFound();
-        
-        IEnumerable<SelectListItem> CategoryDropDown = _db.Categories.Select(i => new SelectListItem
+
+        var viewModel = _mapper.Map<ProductViewModel>(product);
+        viewModel.CategoryDropDown = _db.Categories.Select(i => new SelectListItem
         {
             Text = i.Name,
             Value = i.Id.ToString()
         });
-
-        ViewBag.CategoryDropDown = CategoryDropDown;
         return View(viewModel);
     }
     [HttpPost]
