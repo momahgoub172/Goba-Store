@@ -44,8 +44,7 @@
             </tbody>
         </table>
         <div class="d-flex justify-content-between">
-            <h3>Total Price: @Model.Sum(item => item.Price)</h3>
-            <a asp-controller="Home" asp-action="" class="btn btn-primary w-25" >Buy</a>
+            <a asp-controller="Cart" asp-action="Summary" class="btn btn-primary w-25" >Buy</a>
         </div>
     }
     else

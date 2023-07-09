@@ -4,6 +4,7 @@ using Goba_Store.Services;
 using Goba_Store.View_Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace Goba_Store.Controllers
 {
@@ -39,6 +40,31 @@ namespace Goba_Store.Controllers
                 });
 
             return View(ProductsList);
+        }
+
+        [HttpGet]
+        public IActionResult Summary()
+        {
+            List<ProductDetailsViewModel> ShoppingCartList = new List<ProductDetailsViewModel>();
+            //get other products if there is any products in cart
+            if (HttpContext.Session.GetObj<IEnumerable<ShoppingCart>>(Constants.CartSession) != null
+               && HttpContext.Session.GetObj<IEnumerable<ShoppingCart>>(Constants.CartSession).ToList().Count > 0)
+            {
+                ShoppingCartList = HttpContext.Session.GetObj<IEnumerable<ProductDetailsViewModel>>(Constants.CartSession).ToList();
+            }
+            List<int> ProductsInCart = ShoppingCartList.Select(i => i.Product.Id).ToList();
+            var ClaimsIdentity = (ClaimsIdentity)User.Identity;
+            var Claims = ClaimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
+
+
+            var viewModel = new SummeryViewModel {
+            Products = _db.Products.Where(p => ProductsInCart.Contains(p.Id)).ToList(),
+            User = _db.AppUser.FirstOrDefault(u=>u.Id == Claims.Value)
+
+            };
+
+
+            return View(viewModel);
         }
 
         [HttpPost]
