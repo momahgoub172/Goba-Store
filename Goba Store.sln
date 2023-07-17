@@ -1,6 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Goba Store", "Goba Store\Goba Store.csproj", "{87B3900D-D883-4B5E-BDC7-3DA0EDDD8747}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Goba Store", "Goba Store\Goba Store.csproj", "{87B3900D-D883-4B5E-BDC7-3DA0EDDD8747}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Goba_Store.Utility", "Goba_Store.Utility\Goba_Store.Utility.csproj", "{52FFD636-3190-491A-8DE0-8545CFAA8D3E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Goba_Store.Models", "Goba_Store.Models\Goba_Store.Models.csproj", "{28D7D7B7-7D60-46F7-8483-807D5D948BEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Goba_Store.DataAccess", "Goba_Store.DataAccess\Goba_Store.DataAccess.csproj", "{DB392DC8-E0D7-49F9-9FFC-659BD7B86B91}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,5 +21,23 @@ Global
 		{87B3900D-D883-4B5E-BDC7-3DA0EDDD8747}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87B3900D-D883-4B5E-BDC7-3DA0EDDD8747}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87B3900D-D883-4B5E-BDC7-3DA0EDDD8747}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52FFD636-3190-491A-8DE0-8545CFAA8D3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52FFD636-3190-491A-8DE0-8545CFAA8D3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52FFD636-3190-491A-8DE0-8545CFAA8D3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52FFD636-3190-491A-8DE0-8545CFAA8D3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28D7D7B7-7D60-46F7-8483-807D5D948BEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28D7D7B7-7D60-46F7-8483-807D5D948BEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28D7D7B7-7D60-46F7-8483-807D5D948BEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28D7D7B7-7D60-46F7-8483-807D5D948BEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB392DC8-E0D7-49F9-9FFC-659BD7B86B91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB392DC8-E0D7-49F9-9FFC-659BD7B86B91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB392DC8-E0D7-49F9-9FFC-659BD7B86B91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB392DC8-E0D7-49F9-9FFC-659BD7B86B91}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {211AD9C5-E21B-4FE0-9B25-A345230DB9C3}
 	EndGlobalSection
 EndGlobal
