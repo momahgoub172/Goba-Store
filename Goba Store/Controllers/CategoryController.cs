@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using Goba_Store.Data;
+using Goba_Store.DataAccess;
 using Goba_Store.Models;
 using Goba_Store.View_Models;
 using Microsoft.AspNetCore.Authorization;

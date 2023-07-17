@@ -1,6 +1,6 @@
 ﻿@using Microsoft.AspNetCore.Http
 @inject IHttpContextAccessor HttpContextAccessor
-@using Goba_Store.Services
+@using Goba_Store.Utility
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,11 +40,11 @@
                         else
                         {
                             <li>
-                                @if (HttpContextAccessor.HttpContext.Session.GetObj<List<ShoppingCart>>(Constants.CartSession) != null)
+                                @if (HttpContextAccessor.HttpContext.Session.GetObj<List<ShoppingCartViewModel>>(Constants.CartSession) != null)
                                 {
                                     <a asp-action="Index" asp-controller="Cart">
                                         @{
-                                            var shoppingCartItemsCount = HttpContextAccessor.HttpContext.Session.GetObj<List<ShoppingCart>>(Constants.CartSession).Count;
+                                            var shoppingCartItemsCount = HttpContextAccessor.HttpContext.Session.GetObj<List<ShoppingCartViewModel>>(Constants.CartSession).Count;
                                         }
                                         <i class="fa fa-shopping-cart"></i>&nbsp;(@shoppingCartItemsCount)
                                     </a>

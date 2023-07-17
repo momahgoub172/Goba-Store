@@ -10,9 +10,9 @@
     <ItemGroup>
       <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
       <PackageReference Include="Mailjet.Api" Version="3.0.0" />
-      <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.15" />
+      <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.20" />
       <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.15" />
-      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.15" />
+      <PackageReference Include="Microsoft.Build.Tasks.Core" Version="17.6.3" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.9">
         <PrivateAssets>all</PrivateAssets>
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -27,7 +27,14 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Folder Include="Models\" />
       <Folder Include="wwwroot\images\products" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Goba_Store.DataAccess\Goba_Store.DataAccess.csproj" />
+      <ProjectReference Include="..\Goba_Store.Models\Goba_Store.Models.csproj" />
+      <ProjectReference Include="..\Goba_Store.Utility\Goba_Store.Utility.csproj" />
     </ItemGroup>
 
 </Project>

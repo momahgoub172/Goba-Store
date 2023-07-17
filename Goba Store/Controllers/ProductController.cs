@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
-using Goba_Store.Data;
+using Goba_Store.DataAccess;
 using Goba_Store.Models;
-using Goba_Store.Services;
+using Goba_Store.Utility;
 using Goba_Store.View_Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -36,8 +36,8 @@ public class ProductController : Controller
     public IActionResult Details(int? id)
     {
         List<ProductDetailsViewModel> ShoppingCartList = new List<ProductDetailsViewModel>();
-        if (HttpContext.Session.GetObj<IEnumerable<ShoppingCart>>(Constants.CartSession) != null
-           && HttpContext.Session.GetObj<IEnumerable<ShoppingCart>>(Constants.CartSession).ToList().Count > 0)
+        if (HttpContext.Session.GetObj<IEnumerable<ShoppingCartViewModel>>(Constants.CartSession) != null
+           && HttpContext.Session.GetObj<IEnumerable<ShoppingCartViewModel>>(Constants.CartSession).ToList().Count > 0)
         {
             ShoppingCartList = HttpContext.Session.GetObj<IEnumerable<ProductDetailsViewModel>>(Constants.CartSession).ToList();
         }

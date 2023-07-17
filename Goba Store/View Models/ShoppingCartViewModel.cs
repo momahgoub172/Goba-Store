@@ -1,6 +1,6 @@
 ﻿namespace Goba_Store.Models
 {
-    public class ShoppingCart
+    public class ShoppingCartViewModel
     {
         public int ProductId { get; set; }
     }

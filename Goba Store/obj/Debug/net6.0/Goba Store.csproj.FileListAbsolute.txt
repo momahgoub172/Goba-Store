@@ -204,7 +204,6 @@ G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.AspNetCore.Identity
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.AspNetCore.Razor.Language.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.Build.dll
-G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.Build.Framework.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.CodeAnalysis.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.dll
@@ -262,6 +261,8 @@ G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\NuGet.Versioning.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\System.CodeDom.dll
+G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\System.Collections.Immutable.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\System.Composition.AttributedModel.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\System.Composition.Convention.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\System.Composition.Hosting.dll
@@ -270,11 +271,18 @@ G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\System.Composition.TypedParts
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\System.Drawing.Common.dll
+G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\System.Formats.Asn1.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\System.Reflection.Metadata.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\System.Reflection.MetadataLoadContext.dll
+G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\System.Resources.Extensions.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\System.Runtime.Caching.dll
+G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\System.Security.Cryptography.Pkcs.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\System.Security.Cryptography.Xml.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\System.Security.Permissions.dll
+G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\System.Text.Encoding.CodePages.dll
+G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\System.Threading.Tasks.Dataflow.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\System.Windows.Extensions.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.resources.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.resources.dll
@@ -439,11 +447,17 @@ G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\runtimes\win-arm64\native\Mic
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
-G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Text.Encoding.CodePages.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Goba_Store.Models.dll
+G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Goba_Store.Utility.dll
+G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Goba_Store.Models.pdb
+G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Goba_Store.Utility.pdb
+G:\Projects\Goba Store\Goba Store\obj\Debug\net6.0\Goba Store.csproj.AssemblyReference.cache
 G:\Projects\Goba Store\Goba Store\obj\Debug\net6.0\Goba Store.GeneratedMSBuildEditorConfig.editorconfig
 G:\Projects\Goba Store\Goba Store\obj\Debug\net6.0\Goba Store.AssemblyInfoInputs.cache
 G:\Projects\Goba Store\Goba Store\obj\Debug\net6.0\Goba Store.AssemblyInfo.cs
@@ -461,10 +475,11 @@ G:\Projects\Goba Store\Goba Store\obj\Debug\net6.0\Goba Store.csproj.CopyComplet
 G:\Projects\Goba Store\Goba Store\obj\Debug\net6.0\Goba Store.dll
 G:\Projects\Goba Store\Goba Store\obj\Debug\net6.0\ref\Goba Store.dll
 G:\Projects\Goba Store\Goba Store\obj\Debug\net6.0\Goba Store.pdb
-G:\Projects\Goba Store\Goba Store\obj\Debug\net6.0\Goba Store.csproj.AssemblyReference.cache
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Goba Store.deps.json
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Goba Store.runtimeconfig.json
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Goba Store.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\ref\Goba Store.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Goba Store.pdb
 G:\Projects\Goba Store\Goba Store\obj\Debug\net6.0\Goba Store.genruntimeconfig.cache
+G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Goba_Store.DataAccess.dll
+G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Goba_Store.DataAccess.pdb
