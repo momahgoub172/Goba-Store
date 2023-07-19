@@ -16,6 +16,6 @@ namespace Goba_Store.View_Models
         public string? Image { get; set; }
         public int CategoryId { get; set; }
 
-        public IEnumerable<SelectListItem> CategoryDropDown { get; set; }
+        public IEnumerable<SelectListItem>? CategoryDropDown { get; set; }
     }
 }

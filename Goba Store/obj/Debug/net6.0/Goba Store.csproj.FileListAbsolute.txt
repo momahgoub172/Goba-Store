@@ -483,3 +483,7 @@ G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Goba Store.pdb
 G:\Projects\Goba Store\Goba Store\obj\Debug\net6.0\Goba Store.genruntimeconfig.cache
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Goba_Store.DataAccess.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Goba_Store.DataAccess.pdb
+G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
+G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll

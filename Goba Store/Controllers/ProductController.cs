@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Goba_Store.DataAccess;
+using Goba_Store.DataAccess.Repository.IRepository;
 using Goba_Store.Models;
 using Goba_Store.Utility;
 using Goba_Store.View_Models;
@@ -13,21 +14,20 @@ namespace Goba_Store.Controllers;
 [Authorize(Roles = Constants.AdminRole)]
 public class ProductController : Controller
 {
-    private readonly AppDbContext _db;
+    private readonly IProductRepository _proRepo;
     private readonly IWebHostEnvironment _environment;
     private readonly IMapper _mapper;
 
-    public ProductController(AppDbContext db, IWebHostEnvironment environment, IMapper mapper)
+    public ProductController(IProductRepository proRepo, IWebHostEnvironment environment, IMapper mapper)
     {
-        _db = db;
+        _proRepo = proRepo;
         _environment = environment;
         _mapper = mapper;
     }
 
     public IActionResult Index()
     {
-        var Products = _db.Products.Include(p => p.Category);
-
+        var Products = _proRepo.GetAll(includeProperities: "Category");
         return View(Products);
     }
 
@@ -44,8 +44,7 @@ public class ProductController : Controller
 
         ProductDetailsViewModel model = new ProductDetailsViewModel()
         {
-            Product = _db.Products.Include(p => p.Category)
-                .Where(p => p.Id == id).FirstOrDefault()
+            Product = _proRepo.FirstOrDefault(p => p.Id == id, includeProperities: "Category")
         };
 
         foreach (var item in ShoppingCartList)
@@ -61,51 +60,65 @@ public class ProductController : Controller
     public IActionResult Create()
     {
         ProductViewModel viewModel = new ProductViewModel();
-        viewModel.CategoryDropDown = _db.Categories.Select(i => new SelectListItem
-        {
-            Text = i.Name,
-            Value = i.Id.ToString()
-        });
+        viewModel.CategoryDropDown = _proRepo.GetCategoryDropDownList();
 
         return View(viewModel);
     }
-    
+
+    //[HttpPost]
+    //public IActionResult Create(ProductViewModel viewModel)
+    //{
+    //    var product = _mapper.Map<Product>(viewModel);
+    //    if (!ModelState.IsValid)
+    //    {
+    //        viewModel.CategoryDropDown = _db.Categories.Select(i => new SelectListItem
+    //        {
+    //            Text = i.Name,
+    //            Value = i.Id.ToString()
+    //        });
+    //        return View(viewModel);
+    //    }
+
+    //    Upload image
+    //    product.Image = UploadImage();
+    //    _db.Products.Add(product);
+    //    _db.SaveChanges();
+    //    return RedirectToAction(nameof(Index));
+    //}
+
     [HttpPost]
     public IActionResult Create(ProductViewModel viewModel)
     {
-        var product = _mapper.Map<Product>(viewModel);
-        if (!ModelState.IsValid)
+        if (ModelState.IsValid)
         {
-            viewModel.CategoryDropDown = _db.Categories.Select(i => new SelectListItem
-            {
-                Text = i.Name,
-                Value = i.Id.ToString()
-            });
-            return View(viewModel);
+            var product = _mapper.Map<Product>(viewModel);
+
+            // Upload image
+            product.Image = UploadImage();
+
+            _proRepo.Add(product);
+            _proRepo.Save();
+
+            return RedirectToAction(nameof(Index));
         }
 
-        //Upload image
-        product.Image = UploadImage();
-        _db.Products.Add(product);
-        _db.SaveChanges();
-        return RedirectToAction(nameof(Index));
+        viewModel.CategoryDropDown = _proRepo.GetCategoryDropDownList();
+
+        return View(viewModel);
     }
-    
+
+
     [HttpGet]
-    public IActionResult Edit(int? id)
+    public IActionResult Edit(int id)
     {
         if (id == null || id == 0)
             return NotFound();
-        var product = _db.Products.Find(id);
+        var product = _proRepo.Find(id);
         if (product == null)
             return NotFound();
 
         var viewModel = _mapper.Map<ProductViewModel>(product);
-        viewModel.CategoryDropDown = _db.Categories.Select(i => new SelectListItem
-        {
-            Text = i.Name,
-            Value = i.Id.ToString()
-        });
+        viewModel.CategoryDropDown = _proRepo.GetCategoryDropDownList();
         return View(viewModel);
     }
     [HttpPost]
@@ -125,12 +138,12 @@ public class ProductController : Controller
             else
             {
                 // keep the old image
-                var existingProduct = _db.Products.AsNoTracking().FirstOrDefault(p => p.Id == product.Id);
+                var existingProduct = _proRepo.FirstOrDefault(p => p.Id == product.Id);
                 product.Image = existingProduct.Image;
             }
 
-            _db.Products.Update(product);
-            _db.SaveChanges();
+            _proRepo.Update(product);
+            _proRepo.Save();
             return RedirectToAction("Index");
         }
 
@@ -143,7 +156,7 @@ public class ProductController : Controller
     {
         if (id == null || id == 0)
             return NotFound();
-        var product = _db.Products.Include(c=>c.Category).FirstOrDefault(p=>p.Id == id);
+        var product = _proRepo.FirstOrDefault(p => p.Id == id, includeProperities: "Category");
         if (product == null)
             return NotFound();
         return View(product);
@@ -151,13 +164,13 @@ public class ProductController : Controller
     
     public IActionResult DeletePost(int id)
     {
-        var product = _db.Products.FirstOrDefault(i=>i.Id ==id);
+        var product = _proRepo.FirstOrDefault(i=>i.Id ==id);
         if (product == null)
             return NotFound();
         //Delete old image
         DeleteImage(id);
-        _db.Products.Remove(product);
-        _db.SaveChanges();
+        _proRepo.Remove(product);
+        _proRepo.Save();
         return RedirectToAction(nameof(Index));
     }
 
@@ -182,9 +195,9 @@ public class ProductController : Controller
     {
         var rootPath = _environment.WebRootPath;
         var uploadedFile = rootPath + Constants.ImagePath;
-        var extention = Path.GetExtension(_db.Products.AsNoTracking().Where(p => p.Id == ProductId).FirstOrDefault().Image);
+        var extention = Path.GetExtension(_proRepo.FirstOrDefault(p => p.Id == ProductId).Image);
         //delete old image
-        var oldImage = Path.Combine(uploadedFile, _db.Products.AsNoTracking().Where(p => p.Id == ProductId).FirstOrDefault().Image+extention);
+        var oldImage = Path.Combine(uploadedFile, _proRepo.FirstOrDefault(p => p.Id == ProductId).Image+extention);
         if (System.IO.File.Exists(oldImage))
         {
             System.IO.File.Delete(oldImage);

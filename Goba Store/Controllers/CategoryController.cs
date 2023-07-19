@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Goba_Store.DataAccess;
+using Goba_Store.DataAccess.Repository.IRepository;
 using Goba_Store.Models;
 using Goba_Store.View_Models;
 using Microsoft.AspNetCore.Authorization;
@@ -10,19 +11,19 @@ namespace Goba_Store.Controllers;
 [Authorize(Roles = Constants.AdminRole)]
 public class CategoryController : Controller
 {
-    private readonly AppDbContext _db;
+    private readonly ICategoryRepository _catRepo;
     private readonly IMapper _mapper;
 
-    public CategoryController(AppDbContext Db, IMapper mapper)
+    public CategoryController(ICategoryRepository catRepo, IMapper mapper)
     {
-        _db = Db;
+        _catRepo = catRepo;
         _mapper = mapper;
     }
     // GET
     public IActionResult Index()
     {
-        var Categories = _db.Categories;
-        return View(Categories);
+
+        return View(_catRepo.GetAll());
     }
     [HttpGet]
     public IActionResult Create()
@@ -43,8 +44,8 @@ public class CategoryController : Controller
             //};
             var Cat = _mapper.Map<Category>(viewModel);
 
-            _db.Categories.Add(Cat);
-            _db.SaveChanges();
+            _catRepo.Add(Cat);
+            _catRepo.Save();
             return RedirectToAction(nameof(Index));
         }
         return View(viewModel);
@@ -55,7 +56,7 @@ public class CategoryController : Controller
     {
         if (id == null || id == 0)
             return NotFound();
-        var Cat = _db.Categories.Find(id);
+        var Cat = _catRepo.Find(id);
         if (Cat == null)
             return NotFound();
         return View(Cat);
@@ -66,8 +67,8 @@ public class CategoryController : Controller
         if (ModelState.IsValid)
         {
             var Cat = _mapper.Map<Category>(viewModel);
-            _db.Categories.Update(Cat);
-            _db.SaveChanges();
+            _catRepo.Update(Cat);
+            _catRepo.Save();
             return RedirectToAction(nameof(Index));
         }
         return View(viewModel);
@@ -77,7 +78,7 @@ public class CategoryController : Controller
     {
         if (id == null || id == 0)
             return NotFound();
-        var Cat = _db.Categories.Find(id);
+        var Cat = _catRepo.Find(id);
         if (Cat == null)
             return NotFound();
         return View(Cat);
@@ -86,8 +87,8 @@ public class CategoryController : Controller
     [ValidateAntiForgeryToken]
     public IActionResult DeleteConfirmed(int id)
     {
-        _db.Categories.Remove(_db.Categories.Find(id));
-        _db.SaveChanges();
+        _catRepo.Remove(_catRepo.Find(id));
+        _catRepo.Save();
         return RedirectToAction(nameof(Index));
     }
     
