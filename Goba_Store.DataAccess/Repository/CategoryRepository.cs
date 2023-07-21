@@ -27,6 +27,7 @@ namespace Goba_Store.DataAccess.Repository
                 CategoryFromDb.Id = category.Id;
                 CategoryFromDb.DisplayOrder = category.DisplayOrder;
             }
+            _db.SaveChanges();
         }
     }
 }

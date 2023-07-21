@@ -1,10 +1,10 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Goba_Store.Models;
-using Goba_Store.View_Models;
 using Microsoft.EntityFrameworkCore;
 using Goba_Store.Utility;
 using Goba_Store.DataAccess;
+using Goba_Store.Application.View_Models;
 
 namespace Goba_Store.Controllers;
 

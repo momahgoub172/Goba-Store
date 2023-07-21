@@ -1,0 +1,15 @@
+G:\Projects\Goba Store\Goba_Store.DataAccess\bin\Debug\net6.0\Goba_Store.Infra.deps.json
+G:\Projects\Goba Store\Goba_Store.DataAccess\bin\Debug\net6.0\Goba_Store.Infra.dll
+G:\Projects\Goba Store\Goba_Store.DataAccess\bin\Debug\net6.0\ref\Goba_Store.Infra.dll
+G:\Projects\Goba Store\Goba_Store.DataAccess\bin\Debug\net6.0\Goba_Store.Infra.pdb
+G:\Projects\Goba Store\Goba_Store.DataAccess\bin\Debug\net6.0\Goba_Store.Domain.dll
+G:\Projects\Goba Store\Goba_Store.DataAccess\bin\Debug\net6.0\Goba_Store.Domain.pdb
+G:\Projects\Goba Store\Goba_Store.DataAccess\obj\Debug\net6.0\Goba_Store.Infra.csproj.AssemblyReference.cache
+G:\Projects\Goba Store\Goba_Store.DataAccess\obj\Debug\net6.0\Goba_Store.Infra.GeneratedMSBuildEditorConfig.editorconfig
+G:\Projects\Goba Store\Goba_Store.DataAccess\obj\Debug\net6.0\Goba_Store.Infra.AssemblyInfoInputs.cache
+G:\Projects\Goba Store\Goba_Store.DataAccess\obj\Debug\net6.0\Goba_Store.Infra.AssemblyInfo.cs
+G:\Projects\Goba Store\Goba_Store.DataAccess\obj\Debug\net6.0\Goba_Store.Infra.csproj.CoreCompileInputs.cache
+G:\Projects\Goba Store\Goba_Store.DataAccess\obj\Debug\net6.0\Goba_Store.Infra.csproj.CopyComplete
+G:\Projects\Goba Store\Goba_Store.DataAccess\obj\Debug\net6.0\Goba_Store.Infra.dll
+G:\Projects\Goba Store\Goba_Store.DataAccess\obj\Debug\net6.0\ref\Goba_Store.Infra.dll
+G:\Projects\Goba Store\Goba_Store.DataAccess\obj\Debug\net6.0\Goba_Store.Infra.pdb

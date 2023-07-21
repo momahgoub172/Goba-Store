@@ -9,8 +9,9 @@
       "Goba Store/1.0.0": {
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
-          "Goba_Store.DataAccess": "1.0.0",
-          "Goba_Store.Models": "1.0.0",
+          "Goba_Store.Application": "1.0.0",
+          "Goba_Store.Domain": "1.0.0",
+          "Goba_Store.Infra": "1.0.0",
           "Goba_Store.Utility": "1.0.0",
           "Mailjet.Api": "3.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.20",
@@ -2812,23 +2813,33 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
-      "Goba_Store.DataAccess/1.0.0": {
+      "Goba_Store.Application/1.0.0": {
         "dependencies": {
-          "Goba_Store.Models": "1.0.0",
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.20",
-          "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.2.0",
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.13"
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
+          "Goba_Store.Infra": "1.0.0"
         },
         "runtime": {
-          "Goba_Store.DataAccess.dll": {}
+          "Goba_Store.Application.dll": {}
         }
       },
-      "Goba_Store.Models/1.0.0": {
+      "Goba_Store.Domain/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.20"
         },
         "runtime": {
-          "Goba_Store.Models.dll": {}
+          "Goba_Store.Domain.dll": {}
+        }
+      },
+      "Goba_Store.Infra/1.0.0": {
+        "dependencies": {
+          "Goba_Store.Domain": "1.0.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.20",
+          "Microsoft.AspNetCore.Identity.UI": "6.0.15",
+          "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.2.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.13"
+        },
+        "runtime": {
+          "Goba_Store.Infra.dll": {}
         }
       },
       "Goba_Store.Utility/1.0.0": {
@@ -4457,12 +4468,17 @@
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
     },
-    "Goba_Store.DataAccess/1.0.0": {
+    "Goba_Store.Application/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Goba_Store.Models/1.0.0": {
+    "Goba_Store.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Goba_Store.Infra/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

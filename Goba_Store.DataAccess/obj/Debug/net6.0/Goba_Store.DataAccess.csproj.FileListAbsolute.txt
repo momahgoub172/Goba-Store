@@ -7,9 +7,9 @@ G:\Projects\Goba Store\Goba_Store.DataAccess\bin\Debug\net6.0\Goba_Store.DataAcc
 G:\Projects\Goba Store\Goba_Store.DataAccess\bin\Debug\net6.0\Goba_Store.DataAccess.dll
 G:\Projects\Goba Store\Goba_Store.DataAccess\bin\Debug\net6.0\ref\Goba_Store.DataAccess.dll
 G:\Projects\Goba Store\Goba_Store.DataAccess\bin\Debug\net6.0\Goba_Store.DataAccess.pdb
-G:\Projects\Goba Store\Goba_Store.DataAccess\bin\Debug\net6.0\Goba_Store.Models.dll
-G:\Projects\Goba Store\Goba_Store.DataAccess\bin\Debug\net6.0\Goba_Store.Models.pdb
 G:\Projects\Goba Store\Goba_Store.DataAccess\obj\Debug\net6.0\Goba_Store.DataAccess.csproj.CopyComplete
 G:\Projects\Goba Store\Goba_Store.DataAccess\obj\Debug\net6.0\Goba_Store.DataAccess.dll
 G:\Projects\Goba Store\Goba_Store.DataAccess\obj\Debug\net6.0\ref\Goba_Store.DataAccess.dll
 G:\Projects\Goba Store\Goba_Store.DataAccess\obj\Debug\net6.0\Goba_Store.DataAccess.pdb
+G:\Projects\Goba Store\Goba_Store.DataAccess\bin\Debug\net6.0\Goba_Store.Domain.dll
+G:\Projects\Goba Store\Goba_Store.DataAccess\bin\Debug\net6.0\Goba_Store.Domain.pdb

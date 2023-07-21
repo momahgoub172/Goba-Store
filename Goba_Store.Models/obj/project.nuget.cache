@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "n9IOT2e7lPBzPtF8Ii9pyvJtgL+xQ96MrQKbgYng3K8UsKEeumzGxVo/iFRnR7oR09Y4ZCrBhM9m+RgtNKHp4A==",
+  "dgSpecHash": "irPbl4yGXnWqJgxgUwgd64vpYRlqp4LgqT+i8dKZVTRoWk5+Nacy9PLxE3y4oO8gXY7kahsFwAatBnHbRjXpjw==",
   "success": true,
-  "projectFilePath": "G:\\Projects\\Goba Store\\Goba_Store.Models\\Goba_Store.Models.csproj",
+  "projectFilePath": "G:\\Projects\\Goba Store\\Goba_Store.Models\\Goba_Store.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\GoBa\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.20\\microsoft.aspnetcore.cryptography.internal.6.0.20.nupkg.sha512",
     "C:\\Users\\GoBa\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.20\\microsoft.aspnetcore.cryptography.keyderivation.6.0.20.nupkg.sha512",

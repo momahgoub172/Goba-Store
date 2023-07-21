@@ -1,13 +1,11 @@
 ﻿using AutoMapper;
-using Goba_Store.DataAccess;
+using Goba_Store.Application.View_Models;
 using Goba_Store.DataAccess.Repository.IRepository;
 using Goba_Store.Models;
 using Goba_Store.Utility;
-using Goba_Store.View_Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
+
 
 namespace Goba_Store.Controllers;
 

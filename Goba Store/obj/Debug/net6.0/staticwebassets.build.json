@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BZVAUlqqYtBse10DffB3q4Vz/PZxCE4ag/PA9zrgqOw=",
+  "Hash": "wRsL+G70pdJHyyJB3+J6jS6whn6zxUIYCQX4MJvjrzE=",
   "Source": "Goba Store",
   "BasePath": "_content/Goba Store",
   "Mode": "Default",
@@ -37211,6 +37211,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\products\\96d7e10a-fb06-4244-b96f-6812a13c29c1.png"
+    },
+    {
+      "Identity": "G:\\Projects\\Goba Store\\Goba Store\\wwwroot\\images\\products\\97a8bf4d-b587-4a80-8040-452d585a3bd6.jpeg",
+      "SourceId": "Goba Store",
+      "SourceType": "Discovered",
+      "ContentRoot": "G:\\Projects\\Goba Store\\Goba Store\\wwwroot\\",
+      "BasePath": "_content/Goba Store",
+      "RelativePath": "images/products/97a8bf4d-b587-4a80-8040-452d585a3bd6.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\97a8bf4d-b587-4a80-8040-452d585a3bd6.jpeg"
     },
     {
       "Identity": "G:\\Projects\\Goba Store\\Goba Store\\wwwroot\\images\\products\\99633148-c36e-45ef-a1b3-19889c1f56eb.jpeg",

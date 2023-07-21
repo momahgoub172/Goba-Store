@@ -1,7 +1,7 @@
-﻿using Goba_Store.DataAccess;
+﻿using Goba_Store.Application.View_Models;
+using Goba_Store.DataAccess;
 using Goba_Store.Models;
 using Goba_Store.Utility;
-using Goba_Store.View_Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;

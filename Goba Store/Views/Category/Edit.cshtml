@@ -1,10 +1,10 @@
-﻿@model Category
+﻿@model Goba_Store.Application.View_Models.CategoryViewModel
 
 <h2>Edit Category</h2>
 
 <div class="row">
     <div class="col-md-6">
-        <form asp-action="Edit" class="needs-validation" novalidate>
+        <form method="post" asp-controller="Category" asp-action="Edit" class="needs-validation" novalidate>
             <input asp-for="Id" hidden class="form-control" />
             <div class="form-group">
                 <label asp-for="Name" class="control-label">Category Name</label>

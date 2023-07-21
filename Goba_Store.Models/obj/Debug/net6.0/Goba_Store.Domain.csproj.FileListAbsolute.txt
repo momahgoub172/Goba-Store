@@ -1,0 +1,12 @@
+G:\Projects\Goba Store\Goba_Store.Models\bin\Debug\net6.0\Goba_Store.Domain.deps.json
+G:\Projects\Goba Store\Goba_Store.Models\bin\Debug\net6.0\Goba_Store.Domain.dll
+G:\Projects\Goba Store\Goba_Store.Models\bin\Debug\net6.0\ref\Goba_Store.Domain.dll
+G:\Projects\Goba Store\Goba_Store.Models\bin\Debug\net6.0\Goba_Store.Domain.pdb
+G:\Projects\Goba Store\Goba_Store.Models\obj\Debug\net6.0\Goba_Store.Domain.csproj.AssemblyReference.cache
+G:\Projects\Goba Store\Goba_Store.Models\obj\Debug\net6.0\Goba_Store.Domain.GeneratedMSBuildEditorConfig.editorconfig
+G:\Projects\Goba Store\Goba_Store.Models\obj\Debug\net6.0\Goba_Store.Domain.AssemblyInfoInputs.cache
+G:\Projects\Goba Store\Goba_Store.Models\obj\Debug\net6.0\Goba_Store.Domain.AssemblyInfo.cs
+G:\Projects\Goba Store\Goba_Store.Models\obj\Debug\net6.0\Goba_Store.Domain.csproj.CoreCompileInputs.cache
+G:\Projects\Goba Store\Goba_Store.Models\obj\Debug\net6.0\Goba_Store.Domain.dll
+G:\Projects\Goba Store\Goba_Store.Models\obj\Debug\net6.0\ref\Goba_Store.Domain.dll
+G:\Projects\Goba Store\Goba_Store.Models\obj\Debug\net6.0\Goba_Store.Domain.pdb

@@ -32,11 +32,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "G:\\Projects\\Goba Store\\Goba_Store.DataAccess\\Goba_Store.DataAccess.csproj": {
-                "projectPath": "G:\\Projects\\Goba Store\\Goba_Store.DataAccess\\Goba_Store.DataAccess.csproj"
+              "G:\\Projects\\Goba Store\\Goba_Store.Application\\Goba_Store.Application.csproj": {
+                "projectPath": "G:\\Projects\\Goba Store\\Goba_Store.Application\\Goba_Store.Application.csproj"
               },
-              "G:\\Projects\\Goba Store\\Goba_Store.Models\\Goba_Store.Models.csproj": {
-                "projectPath": "G:\\Projects\\Goba Store\\Goba_Store.Models\\Goba_Store.Models.csproj"
+              "G:\\Projects\\Goba Store\\Goba_Store.DataAccess\\Goba_Store.Infra.csproj": {
+                "projectPath": "G:\\Projects\\Goba Store\\Goba_Store.DataAccess\\Goba_Store.Infra.csproj"
+              },
+              "G:\\Projects\\Goba Store\\Goba_Store.Models\\Goba_Store.Domain.csproj": {
+                "projectPath": "G:\\Projects\\Goba Store\\Goba_Store.Models\\Goba_Store.Domain.csproj"
               },
               "G:\\Projects\\Goba Store\\Goba_Store.Utility\\Goba_Store.Utility.csproj": {
                 "projectPath": "G:\\Projects\\Goba Store\\Goba_Store.Utility\\Goba_Store.Utility.csproj"
@@ -121,12 +124,80 @@
         }
       }
     },
-    "G:\\Projects\\Goba Store\\Goba_Store.DataAccess\\Goba_Store.DataAccess.csproj": {
+    "G:\\Projects\\Goba Store\\Goba_Store.Application\\Goba_Store.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Projects\\Goba Store\\Goba_Store.DataAccess\\Goba_Store.DataAccess.csproj",
-        "projectName": "Goba_Store.DataAccess",
-        "projectPath": "G:\\Projects\\Goba Store\\Goba_Store.DataAccess\\Goba_Store.DataAccess.csproj",
+        "projectUniqueName": "G:\\Projects\\Goba Store\\Goba_Store.Application\\Goba_Store.Application.csproj",
+        "projectName": "Goba_Store.Application",
+        "projectPath": "G:\\Projects\\Goba Store\\Goba_Store.Application\\Goba_Store.Application.csproj",
+        "packagesPath": "C:\\Users\\GoBa\\.nuget\\packages\\",
+        "outputPath": "G:\\Projects\\Goba Store\\Goba_Store.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\GoBa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "G:\\Projects\\Goba Store\\Goba_Store.DataAccess\\Goba_Store.Infra.csproj": {
+                "projectPath": "G:\\Projects\\Goba Store\\Goba_Store.DataAccess\\Goba_Store.Infra.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.116\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\Projects\\Goba Store\\Goba_Store.DataAccess\\Goba_Store.Infra.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\Projects\\Goba Store\\Goba_Store.DataAccess\\Goba_Store.Infra.csproj",
+        "projectName": "Goba_Store.Infra",
+        "projectPath": "G:\\Projects\\Goba Store\\Goba_Store.DataAccess\\Goba_Store.Infra.csproj",
         "packagesPath": "C:\\Users\\GoBa\\.nuget\\packages\\",
         "outputPath": "G:\\Projects\\Goba Store\\Goba_Store.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
@@ -149,8 +220,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "G:\\Projects\\Goba Store\\Goba_Store.Models\\Goba_Store.Models.csproj": {
-                "projectPath": "G:\\Projects\\Goba Store\\Goba_Store.Models\\Goba_Store.Models.csproj"
+              "G:\\Projects\\Goba Store\\Goba_Store.Models\\Goba_Store.Domain.csproj": {
+                "projectPath": "G:\\Projects\\Goba Store\\Goba_Store.Models\\Goba_Store.Domain.csproj"
               }
             }
           }
@@ -168,6 +239,10 @@
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.20, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[6.0.15, )"
             },
             "Microsoft.AspNetCore.Mvc.ViewFeatures": {
               "target": "Package",
@@ -197,12 +272,12 @@
         }
       }
     },
-    "G:\\Projects\\Goba Store\\Goba_Store.Models\\Goba_Store.Models.csproj": {
+    "G:\\Projects\\Goba Store\\Goba_Store.Models\\Goba_Store.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Projects\\Goba Store\\Goba_Store.Models\\Goba_Store.Models.csproj",
-        "projectName": "Goba_Store.Models",
-        "projectPath": "G:\\Projects\\Goba Store\\Goba_Store.Models\\Goba_Store.Models.csproj",
+        "projectUniqueName": "G:\\Projects\\Goba Store\\Goba_Store.Models\\Goba_Store.Domain.csproj",
+        "projectName": "Goba_Store.Domain",
+        "projectPath": "G:\\Projects\\Goba Store\\Goba_Store.Models\\Goba_Store.Domain.csproj",
         "packagesPath": "C:\\Users\\GoBa\\.nuget\\packages\\",
         "outputPath": "G:\\Projects\\Goba Store\\Goba_Store.Models\\obj\\",
         "projectStyle": "PackageReference",

@@ -745,9 +745,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\Projects\\Goba Store\\Goba_Store.Models\\Goba_Store.Models.csproj",
-      "projectName": "Goba_Store.Models",
-      "projectPath": "G:\\Projects\\Goba Store\\Goba_Store.Models\\Goba_Store.Models.csproj",
+      "projectUniqueName": "G:\\Projects\\Goba Store\\Goba_Store.Models\\Goba_Store.Domain.csproj",
+      "projectName": "Goba_Store.Domain",
+      "projectPath": "G:\\Projects\\Goba Store\\Goba_Store.Models\\Goba_Store.Domain.csproj",
       "packagesPath": "C:\\Users\\GoBa\\.nuget\\packages\\",
       "outputPath": "G:\\Projects\\Goba Store\\Goba_Store.Models\\obj\\",
       "projectStyle": "PackageReference",

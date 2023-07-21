@@ -3918,33 +3918,48 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "Goba_Store.DataAccess/1.0.0": {
+      "Goba_Store.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Goba_Store.Models": "1.0.0",
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.20",
-          "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.2.0",
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.13"
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
+          "Goba_Store.Infra": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/Goba_Store.DataAccess.dll": {}
+          "bin/placeholder/Goba_Store.Application.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Goba_Store.DataAccess.dll": {}
+          "bin/placeholder/Goba_Store.Application.dll": {}
         }
       },
-      "Goba_Store.Models/1.0.0": {
+      "Goba_Store.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.20"
         },
         "compile": {
-          "bin/placeholder/Goba_Store.Models.dll": {}
+          "bin/placeholder/Goba_Store.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Goba_Store.Models.dll": {}
+          "bin/placeholder/Goba_Store.Domain.dll": {}
+        }
+      },
+      "Goba_Store.Infra/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Goba_Store.Domain": "1.0.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.20",
+          "Microsoft.AspNetCore.Identity.UI": "6.0.15",
+          "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.2.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.13"
+        },
+        "compile": {
+          "bin/placeholder/Goba_Store.Infra.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Goba_Store.Infra.dll": {}
         }
       },
       "Goba_Store.Utility/1.0.0": {
@@ -11638,15 +11653,20 @@
         "system.xml.xdocument.nuspec"
       ]
     },
-    "Goba_Store.DataAccess/1.0.0": {
+    "Goba_Store.Application/1.0.0": {
       "type": "project",
-      "path": "../Goba_Store.DataAccess/Goba_Store.DataAccess.csproj",
-      "msbuildProject": "../Goba_Store.DataAccess/Goba_Store.DataAccess.csproj"
+      "path": "../Goba_Store.Application/Goba_Store.Application.csproj",
+      "msbuildProject": "../Goba_Store.Application/Goba_Store.Application.csproj"
     },
-    "Goba_Store.Models/1.0.0": {
+    "Goba_Store.Domain/1.0.0": {
       "type": "project",
-      "path": "../Goba_Store.Models/Goba_Store.Models.csproj",
-      "msbuildProject": "../Goba_Store.Models/Goba_Store.Models.csproj"
+      "path": "../Goba_Store.Models/Goba_Store.Domain.csproj",
+      "msbuildProject": "../Goba_Store.Models/Goba_Store.Domain.csproj"
+    },
+    "Goba_Store.Infra/1.0.0": {
+      "type": "project",
+      "path": "../Goba_Store.DataAccess/Goba_Store.Infra.csproj",
+      "msbuildProject": "../Goba_Store.DataAccess/Goba_Store.Infra.csproj"
     },
     "Goba_Store.Utility/1.0.0": {
       "type": "project",
@@ -11657,8 +11677,9 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
-      "Goba_Store.DataAccess >= 1.0.0",
-      "Goba_Store.Models >= 1.0.0",
+      "Goba_Store.Application >= 1.0.0",
+      "Goba_Store.Domain >= 1.0.0",
+      "Goba_Store.Infra >= 1.0.0",
       "Goba_Store.Utility >= 1.0.0",
       "Mailjet.Api >= 3.0.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.20",
@@ -11703,11 +11724,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "G:\\Projects\\Goba Store\\Goba_Store.DataAccess\\Goba_Store.DataAccess.csproj": {
-              "projectPath": "G:\\Projects\\Goba Store\\Goba_Store.DataAccess\\Goba_Store.DataAccess.csproj"
+            "G:\\Projects\\Goba Store\\Goba_Store.Application\\Goba_Store.Application.csproj": {
+              "projectPath": "G:\\Projects\\Goba Store\\Goba_Store.Application\\Goba_Store.Application.csproj"
             },
-            "G:\\Projects\\Goba Store\\Goba_Store.Models\\Goba_Store.Models.csproj": {
-              "projectPath": "G:\\Projects\\Goba Store\\Goba_Store.Models\\Goba_Store.Models.csproj"
+            "G:\\Projects\\Goba Store\\Goba_Store.DataAccess\\Goba_Store.Infra.csproj": {
+              "projectPath": "G:\\Projects\\Goba Store\\Goba_Store.DataAccess\\Goba_Store.Infra.csproj"
+            },
+            "G:\\Projects\\Goba Store\\Goba_Store.Models\\Goba_Store.Domain.csproj": {
+              "projectPath": "G:\\Projects\\Goba Store\\Goba_Store.Models\\Goba_Store.Domain.csproj"
             },
             "G:\\Projects\\Goba Store\\Goba_Store.Utility\\Goba_Store.Utility.csproj": {
               "projectPath": "G:\\Projects\\Goba Store\\Goba_Store.Utility\\Goba_Store.Utility.csproj"

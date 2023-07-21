@@ -27,13 +27,13 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Models\" />
       <Folder Include="wwwroot\images\products" />
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Goba_Store.DataAccess\Goba_Store.DataAccess.csproj" />
-      <ProjectReference Include="..\Goba_Store.Models\Goba_Store.Models.csproj" />
+      <ProjectReference Include="..\Goba_Store.Application\Goba_Store.Application.csproj" />
+      <ProjectReference Include="..\Goba_Store.DataAccess\Goba_Store.Infra.csproj" />
+      <ProjectReference Include="..\Goba_Store.Models\Goba_Store.Domain.csproj" />
       <ProjectReference Include="..\Goba_Store.Utility\Goba_Store.Utility.csproj" />
     </ItemGroup>
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qRFMAouSOeWxgdND86WNncBN4nC7PJtecShAMChXFcPCbF1Bs8wjL8/S8QgWy8ZS/KO2vsPsPep9fy51XInT5A==",
+  "dgSpecHash": "GDVF2NeK+K5Ouz054Wl9OJc0Sf9j9dmIDFqt/ErHtb+1I56o2Bu1ZEmSvRyScE+xAAUP0A0WKpin1vGGe80MMg==",
   "success": true,
-  "projectFilePath": "G:\\Projects\\Goba Store\\Goba_Store.DataAccess\\Goba_Store.DataAccess.csproj",
+  "projectFilePath": "G:\\Projects\\Goba Store\\Goba_Store.DataAccess\\Goba_Store.Infra.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\GoBa\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",
     "C:\\Users\\GoBa\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
@@ -22,6 +22,7 @@
     "C:\\Users\\GoBa\\.nuget\\packages\\microsoft.aspnetcore.http.extensions\\2.2.0\\microsoft.aspnetcore.http.extensions.2.2.0.nupkg.sha512",
     "C:\\Users\\GoBa\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "C:\\Users\\GoBa\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\6.0.20\\microsoft.aspnetcore.identity.entityframeworkcore.6.0.20.nupkg.sha512",
+    "C:\\Users\\GoBa\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.15\\microsoft.aspnetcore.identity.ui.6.0.15.nupkg.sha512",
     "C:\\Users\\GoBa\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\2.2.0\\microsoft.aspnetcore.jsonpatch.2.2.0.nupkg.sha512",
     "C:\\Users\\GoBa\\.nuget\\packages\\microsoft.aspnetcore.mvc.abstractions\\2.2.0\\microsoft.aspnetcore.mvc.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\GoBa\\.nuget\\packages\\microsoft.aspnetcore.mvc.core\\2.2.0\\microsoft.aspnetcore.mvc.core.2.2.0.nupkg.sha512",
@@ -47,7 +48,8 @@
     "C:\\Users\\GoBa\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.1\\microsoft.extensions.dependencyinjection.6.0.1.nupkg.sha512",
     "C:\\Users\\GoBa\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\GoBa\\.nuget\\packages\\microsoft.extensions.dependencymodel\\2.1.0\\microsoft.extensions.dependencymodel.2.1.0.nupkg.sha512",
-    "C:\\Users\\GoBa\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\2.2.0\\microsoft.extensions.fileproviders.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\GoBa\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\6.0.0\\microsoft.extensions.fileproviders.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\GoBa\\.nuget\\packages\\microsoft.extensions.fileproviders.embedded\\6.0.15\\microsoft.extensions.fileproviders.embedded.6.0.15.nupkg.sha512",
     "C:\\Users\\GoBa\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\2.2.0\\microsoft.extensions.hosting.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\GoBa\\.nuget\\packages\\microsoft.extensions.identity.core\\6.0.20\\microsoft.extensions.identity.core.6.0.20.nupkg.sha512",
     "C:\\Users\\GoBa\\.nuget\\packages\\microsoft.extensions.identity.stores\\6.0.20\\microsoft.extensions.identity.stores.6.0.20.nupkg.sha512",

@@ -1,12 +1,15 @@
 using Goba_Store;
 using Goba_Store.DataAccess;
-using Goba_Store.Utility;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Goba_Store.Models;
 using Goba_Store.DataAccess.Repository.IRepository;
 using Goba_Store.DataAccess.Repository;
+using Goba_Store.Infra;
+using Goba_Store.Application.Services;
+using Goba_Store.Application.Services.Interfaces;
+using Goba_Store.Application;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -28,9 +31,11 @@ builder.Services.AddSession(options =>
 });
 builder.Services.AddControllersWithViews();
 builder.Services.AddTransient<IEmailSender, EmailSender>();
-builder.Services.AddAutoMapper(typeof(Program));
+builder.Services.AddAutoMapper(typeof(MappingProfile));
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
+
+builder.Services.AddScoped<ICategoryService , CategoryService>();
 
 
 

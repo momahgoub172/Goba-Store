@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "Goba_Store.DataAccess/1.0.0": {
         "dependencies": {
-          "Goba_Store.Models": "1.0.0",
+          "Goba_Store.Domain": "1.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.20",
           "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.2.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.13"
@@ -1663,12 +1663,12 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
-      "Goba_Store.Models/1.0.0": {
+      "Goba_Store.Domain/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.20"
         },
         "runtime": {
-          "Goba_Store.Models.dll": {}
+          "Goba_Store.Domain.dll": {}
         }
       }
     }
@@ -2771,7 +2771,7 @@
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
     },
-    "Goba_Store.Models/1.0.0": {
+    "Goba_Store.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
