@@ -10,4 +10,8 @@
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.15" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Goba_Store.Models\Goba_Store.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

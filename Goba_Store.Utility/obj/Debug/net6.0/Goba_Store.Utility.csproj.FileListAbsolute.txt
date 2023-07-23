@@ -2,11 +2,14 @@ G:\Projects\Goba Store\Goba_Store.Utility\bin\Debug\net6.0\Goba_Store.Utility.de
 G:\Projects\Goba Store\Goba_Store.Utility\bin\Debug\net6.0\Goba_Store.Utility.dll
 G:\Projects\Goba Store\Goba_Store.Utility\bin\Debug\net6.0\ref\Goba_Store.Utility.dll
 G:\Projects\Goba Store\Goba_Store.Utility\bin\Debug\net6.0\Goba_Store.Utility.pdb
+G:\Projects\Goba Store\Goba_Store.Utility\bin\Debug\net6.0\Goba_Store.Domain.dll
+G:\Projects\Goba Store\Goba_Store.Utility\bin\Debug\net6.0\Goba_Store.Domain.pdb
 G:\Projects\Goba Store\Goba_Store.Utility\obj\Debug\net6.0\Goba_Store.Utility.csproj.AssemblyReference.cache
 G:\Projects\Goba Store\Goba_Store.Utility\obj\Debug\net6.0\Goba_Store.Utility.GeneratedMSBuildEditorConfig.editorconfig
 G:\Projects\Goba Store\Goba_Store.Utility\obj\Debug\net6.0\Goba_Store.Utility.AssemblyInfoInputs.cache
 G:\Projects\Goba Store\Goba_Store.Utility\obj\Debug\net6.0\Goba_Store.Utility.AssemblyInfo.cs
 G:\Projects\Goba Store\Goba_Store.Utility\obj\Debug\net6.0\Goba_Store.Utility.csproj.CoreCompileInputs.cache
+G:\Projects\Goba Store\Goba_Store.Utility\obj\Debug\net6.0\Goba_Store.Utility.csproj.CopyComplete
 G:\Projects\Goba Store\Goba_Store.Utility\obj\Debug\net6.0\Goba_Store.Utility.dll
 G:\Projects\Goba Store\Goba_Store.Utility\obj\Debug\net6.0\ref\Goba_Store.Utility.dll
 G:\Projects\Goba Store\Goba_Store.Utility\obj\Debug\net6.0\Goba_Store.Utility.pdb
