@@ -10,6 +10,7 @@ using Goba_Store.Infra;
 using Goba_Store.Application.Services;
 using Goba_Store.Application.Services.Interfaces;
 using Goba_Store.Application;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -36,8 +37,8 @@ builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 
 builder.Services.AddScoped<ICategoryService , CategoryService>();
-
-
+builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddHttpContextAccessor();
 
 var app = builder.Build();
 

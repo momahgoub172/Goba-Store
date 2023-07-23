@@ -154,6 +154,9 @@
             "projectReferences": {
               "G:\\Projects\\Goba Store\\Goba_Store.DataAccess\\Goba_Store.Infra.csproj": {
                 "projectPath": "G:\\Projects\\Goba Store\\Goba_Store.DataAccess\\Goba_Store.Infra.csproj"
+              },
+              "G:\\Projects\\Goba Store\\Goba_Store.Utility\\Goba_Store.Utility.csproj": {
+                "projectPath": "G:\\Projects\\Goba Store\\Goba_Store.Utility\\Goba_Store.Utility.csproj"
               }
             }
           }
@@ -363,7 +366,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "G:\\Projects\\Goba Store\\Goba_Store.Models\\Goba_Store.Domain.csproj": {
+                "projectPath": "G:\\Projects\\Goba Store\\Goba_Store.Models\\Goba_Store.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Goba_Store.DataAccess\Goba_Store.Infra.csproj" />
+    <ProjectReference Include="..\Goba_Store.Utility\Goba_Store.Utility.csproj" />
   </ItemGroup>
 
 </Project>

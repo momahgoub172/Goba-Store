@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc.Rendering;
+﻿using Goba_Store.Models;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System.ComponentModel.DataAnnotations;
 
 namespace Goba_Store.Application.View_Models
@@ -14,7 +15,8 @@ namespace Goba_Store.Application.View_Models
         [Range(int.MinValue, int.MaxValue)]
         public int Price { get; set; }
         public string? Image { get; set; }
-        public int CategoryId { get; set; }
+        public Category? Category { get; set; }
+        public int? CategoryId { get; set; }
 
         public IEnumerable<SelectListItem>? CategoryDropDown { get; set; }
     }

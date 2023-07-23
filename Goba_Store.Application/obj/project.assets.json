@@ -2452,6 +2452,20 @@
         "runtime": {
           "bin/placeholder/Goba_Store.Infra.dll": {}
         }
+      },
+      "Goba_Store.Utility/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Goba_Store.Domain": "1.0.0",
+          "Microsoft.AspNetCore.Identity.UI": "6.0.15"
+        },
+        "compile": {
+          "bin/placeholder/Goba_Store.Utility.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Goba_Store.Utility.dll": {}
+        }
       }
     }
   },
@@ -7867,12 +7881,18 @@
       "type": "project",
       "path": "../Goba_Store.DataAccess/Goba_Store.Infra.csproj",
       "msbuildProject": "../Goba_Store.DataAccess/Goba_Store.Infra.csproj"
+    },
+    "Goba_Store.Utility/1.0.0": {
+      "type": "project",
+      "path": "../Goba_Store.Utility/Goba_Store.Utility.csproj",
+      "msbuildProject": "../Goba_Store.Utility/Goba_Store.Utility.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
-      "Goba_Store.Infra >= 1.0.0"
+      "Goba_Store.Infra >= 1.0.0",
+      "Goba_Store.Utility >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -7909,6 +7929,9 @@
           "projectReferences": {
             "G:\\Projects\\Goba Store\\Goba_Store.DataAccess\\Goba_Store.Infra.csproj": {
               "projectPath": "G:\\Projects\\Goba Store\\Goba_Store.DataAccess\\Goba_Store.Infra.csproj"
+            },
+            "G:\\Projects\\Goba Store\\Goba_Store.Utility\\Goba_Store.Utility.csproj": {
+              "projectPath": "G:\\Projects\\Goba Store\\Goba_Store.Utility\\Goba_Store.Utility.csproj"
             }
           }
         }

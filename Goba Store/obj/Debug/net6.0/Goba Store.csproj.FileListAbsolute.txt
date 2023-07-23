@@ -191,6 +191,11 @@ G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\appsettings.Development.json
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\appsettings.json
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Goba Store.staticwebassets.runtime.json
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Goba Store.exe
+G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Goba Store.deps.json
+G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Goba Store.runtimeconfig.json
+G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Goba Store.dll
+G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\ref\Goba Store.dll
+G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Goba Store.pdb
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\AutoMapper.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Humanizer.dll
@@ -201,6 +206,7 @@ G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptogr
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll
+G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.AspNetCore.Razor.Language.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.Build.dll
@@ -220,6 +226,7 @@ G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.CodeAnalysis.Worksp
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.DiaSymReader.dll
+G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.DotNet.Scaffolding.Shared.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -228,6 +235,7 @@ G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.EntityFrameworkCore
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
@@ -249,6 +257,7 @@ G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.VisualStudio.Web.Co
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Newtonsoft.Json.dll
+G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\NuGet.Common.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\NuGet.Configuration.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\NuGet.DependencyResolver.Core.dll
@@ -453,7 +462,13 @@ G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\runtimes\win\lib\net6.0\Syste
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Text.Encoding.CodePages.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Goba_Store.Application.dll
+G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Goba_Store.Domain.dll
+G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Goba_Store.Infra.dll
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Goba_Store.Utility.dll
+G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Goba_Store.Application.pdb
+G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Goba_Store.Infra.pdb
+G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Goba_Store.Domain.pdb
 G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Goba_Store.Utility.pdb
 G:\Projects\Goba Store\Goba Store\obj\Debug\net6.0\Goba Store.csproj.AssemblyReference.cache
 G:\Projects\Goba Store\Goba Store\obj\Debug\net6.0\Goba Store.GeneratedMSBuildEditorConfig.editorconfig
@@ -473,19 +488,4 @@ G:\Projects\Goba Store\Goba Store\obj\Debug\net6.0\Goba Store.csproj.CopyComplet
 G:\Projects\Goba Store\Goba Store\obj\Debug\net6.0\Goba Store.dll
 G:\Projects\Goba Store\Goba Store\obj\Debug\net6.0\ref\Goba Store.dll
 G:\Projects\Goba Store\Goba Store\obj\Debug\net6.0\Goba Store.pdb
-G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Goba Store.deps.json
-G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Goba Store.runtimeconfig.json
-G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Goba Store.dll
-G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\ref\Goba Store.dll
-G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Goba Store.pdb
 G:\Projects\Goba Store\Goba Store\obj\Debug\net6.0\Goba Store.genruntimeconfig.cache
-G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
-G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
-G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
-G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
-G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Goba_Store.Domain.dll
-G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Goba_Store.Domain.pdb
-G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Goba_Store.Infra.dll
-G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Goba_Store.Infra.pdb
-G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Goba_Store.Application.dll
-G:\Projects\Goba Store\Goba Store\bin\Debug\net6.0\Goba_Store.Application.pdb

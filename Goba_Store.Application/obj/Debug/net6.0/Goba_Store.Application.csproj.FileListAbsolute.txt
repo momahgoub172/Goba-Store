@@ -4,8 +4,10 @@ G:\Projects\Goba Store\Goba_Store.Application\bin\Debug\net6.0\ref\Goba_Store.Ap
 G:\Projects\Goba Store\Goba_Store.Application\bin\Debug\net6.0\Goba_Store.Application.pdb
 G:\Projects\Goba Store\Goba_Store.Application\bin\Debug\net6.0\Goba_Store.Domain.dll
 G:\Projects\Goba Store\Goba_Store.Application\bin\Debug\net6.0\Goba_Store.Infra.dll
-G:\Projects\Goba Store\Goba_Store.Application\bin\Debug\net6.0\Goba_Store.Domain.pdb
+G:\Projects\Goba Store\Goba_Store.Application\bin\Debug\net6.0\Goba_Store.Utility.dll
 G:\Projects\Goba Store\Goba_Store.Application\bin\Debug\net6.0\Goba_Store.Infra.pdb
+G:\Projects\Goba Store\Goba_Store.Application\bin\Debug\net6.0\Goba_Store.Utility.pdb
+G:\Projects\Goba Store\Goba_Store.Application\bin\Debug\net6.0\Goba_Store.Domain.pdb
 G:\Projects\Goba Store\Goba_Store.Application\obj\Debug\net6.0\Goba_Store.Application.csproj.AssemblyReference.cache
 G:\Projects\Goba Store\Goba_Store.Application\obj\Debug\net6.0\Goba_Store.Application.GeneratedMSBuildEditorConfig.editorconfig
 G:\Projects\Goba Store\Goba_Store.Application\obj\Debug\net6.0\Goba_Store.Application.AssemblyInfoInputs.cache
